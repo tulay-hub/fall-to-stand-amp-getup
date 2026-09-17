@@ -160,7 +160,7 @@ docs/                                  # 奖励证据和复现记录
 训练入口：
 
 ```bash
-./projects/04_fall_to_stand/scripts/train.sh --env.scene.num-envs=2048
+./scripts/train.sh --env.scene.num-envs=2048
 ```
 
 ## 9. 导出、MuJoCo 和真机
@@ -219,4 +219,4 @@ The failure gates are 70-degree orientation, 0.44-meter base height, and timeout
 
 ## Reproduction and deployment
 
-Run `./projects/04_fall_to_stand/scripts/train.sh --env.scene.num-envs=2048` with the local AMP/MJLab environment. Export the actor with the local ONNX wrapper and keep `deploy_config.yaml`, default pose, scales, PD, effort limits, SDK joint permutation, and fall detection thresholds together. Replay with the same MJCF in MuJoCo, then rebuild the 72-dimensional actor terms and four-frame history from real IMU/encoders before staged hardware testing. The deployed actor does not need a motion file.
+Run `./scripts/train.sh --env.scene.num-envs=2048` with the local AMP/MJLab environment. Export the actor with the local ONNX wrapper and keep `deploy_config.yaml`, default pose, scales, PD, effort limits, SDK joint permutation, and fall detection thresholds together. Replay with the same MJCF in MuJoCo, then rebuild the 72-dimensional actor terms and four-frame history from real IMU/encoders before staged hardware testing. The deployed actor does not need a motion file.
