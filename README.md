@@ -1,3 +1,6 @@
+<p align="center"><a href="#zh">🇨🇳 中文</a> &nbsp;|&nbsp; <a href="#en">🇬🇧 English</a></p>
+<a id="zh"></a>
+
 # 04 · 跌倒起身（Fall to Stand / GetUp）
 
 ## 项目定位
@@ -43,6 +46,8 @@
 ## 真机边界
 
 本项目包含 WBC FSM 和硬件参考，但当前整理没有启动真机、没有切换控制模式；仿真、导出和实机验证必须分开记录。
+
+<a id="en"></a>
 
 ## English
 
