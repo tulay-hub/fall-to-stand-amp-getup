@@ -1,4 +1,4 @@
-<p align="center"><a href="#zh">🇨🇳 中文</a> &nbsp;|&nbsp; <a href="#en">🇬🇧 English</a></p>
+<p align="center"><a href="#zh">中文</a> &nbsp;|&nbsp; <a href="#en">English</a></p>
 <a id="zh"></a>
 
 # 04 · 跌倒起身（Fall to Stand / GetUp）
@@ -14,6 +14,14 @@
 - 回合：训练 `20 s`；PLAY 可使用长回合
 - 训练动作：`framework/amp_mjlab/AMP_mjlab/src/assets/motions/lens110/Stand` 与 `Recovery`
 - 已整理导出：`exports/versions/Lens110_GetUp_Sim2Real_v2_20260908`
+
+## 训练架构和演示
+
+AMP GetUp、72/288 观测、21 维动作、起身奖励、AMP 判别器和部署流程见 [`docs/TRAINING_ARCHITECTURE.md`](docs/TRAINING_ARCHITECTURE.md)。
+
+<video controls width="720" src="docs/media/fall-to-stand-demo.mp4"></video>
+
+[打开或下载跌倒起身演示视频](docs/media/fall-to-stand-demo.mp4)
 
 ## 目录
 
@@ -51,7 +59,7 @@
 
 ## English
 
-This repository contains the fall-to-stand project built on AMP GetUp. Stand and Recovery clips are stored separately. The verified Lens110 motion format uses 21 joint positions and velocities plus 22 body states; deployment policy dimensions and motion-data dimensions must not be conflated.
+This repository contains the fall-to-stand project for the bipedal humanoid robot, built on AMP GetUp. Stand and Recovery clips are stored separately. The verified motion format uses 21 joint positions and velocities plus 22 body states; deployment policy dimensions and motion-data dimensions must not be conflated.
 
 Install the local AMP/MuJoCo dependencies, then run `./scripts/train.sh --env.scene.num-envs=2048`. Select an export only after checking its motion set, joint order, PD/effort limits, ONNX interface, and replay result. Keep the `framework/`, `data/`, `exports/`, and `docs/` evidence separated.
 
