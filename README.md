@@ -31,7 +31,7 @@
 ## 训练/回放
 
 ```bash
-./projects/04_fall_to_stand/scripts/train.sh \
+./scripts/train.sh \
   --env.scene.num-envs=2048
 ```
 
@@ -41,7 +41,7 @@
 ## 奖励框架
 
 起身不是普通行走奖励：它使用零速度站立跟踪、单调站高、躯干直立、防腾空、站定脚底平整、无命令滑步、自碰撞
-和终止惩罚。详细权重和三重门控见 [`docs/REWARD_FRAMEWORKS.md`](../../docs/REWARD_FRAMEWORKS.md)。
+和终止惩罚。详细权重和三重门控见 [`docs/REWARD_FRAMEWORKS.md`](docs/REWARD_FRAMEWORKS.md)。
 
 ## 真机边界
 
@@ -53,6 +53,6 @@
 
 This repository contains the fall-to-stand project built on AMP GetUp. Stand and Recovery clips are stored separately. The verified Lens110 motion format uses 21 joint positions and velocities plus 22 body states; deployment policy dimensions and motion-data dimensions must not be conflated.
 
-Install the local AMP/MuJoCo dependencies, then run `./projects/04_fall_to_stand/scripts/train.sh --env.scene.num-envs=2048`. Select an export only after checking its motion set, joint order, PD/effort limits, ONNX interface, and replay result. Keep the `framework/`, `data/`, `exports/`, and `docs/` evidence separated.
+Install the local AMP/MuJoCo dependencies, then run `./scripts/train.sh --env.scene.num-envs=2048`. Select an export only after checking its motion set, joint order, PD/effort limits, ONNX interface, and replay result. Keep the `framework/`, `data/`, `exports/`, and `docs/` evidence separated.
 
 Read `docs/REWARD_FRAMEWORKS.md` for the AMP reward gates and termination terms. A GetUp simulation replay is not a real-hardware safety certification.
