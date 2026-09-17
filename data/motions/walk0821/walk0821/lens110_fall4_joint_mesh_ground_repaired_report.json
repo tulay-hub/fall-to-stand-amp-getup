@@ -1,0 +1,44 @@
+{
+  "source": "/home/srl/lense110/motion correct/walk0821/lens110_fall4_static_support_repaired.pkl",
+  "output": "/home/srl/lense110/motion correct/walk0821/lens110_fall4_joint_mesh_ground_repaired.pkl",
+  "xml": "/home/srl/lense110/walk/colleague_sim2sim_work/humanoid_sim2sim/resource/lens_110/mjcf/lens110_21dof_sim_flatfoot.xml",
+  "frames": 2575,
+  "fps": 50.0,
+  "method": "single-pass joint objective for exact mesh-mesh, mesh-ground, and static supports",
+  "native_ccd": false,
+  "native_ccd_message": "native CCD 不可用，使用默认 CCD",
+  "accepted_frames": 818,
+  "rejected_frames": 1757,
+  "static_contact_geoms": 17,
+  "static_contact_windows": 63,
+  "source_candidate_scan": {
+    "mesh_mesh_collision_count": 5892,
+    "mesh_ground_collision_count": 630,
+    "max_mesh_mesh_penetration_mm": 78.34729272503965,
+    "max_mesh_ground_penetration_mm": 138.86063703903935
+  },
+  "after_candidate_scan": {
+    "checked_frames": 2575,
+    "stride": 1,
+    "mesh_mesh_collision_count": 2676,
+    "mesh_ground_collision_count": 318,
+    "max_mesh_mesh_penetration_mm": 78.34729272503965,
+    "max_mesh_ground_penetration_mm": 133.31214201946014,
+    "worst_mesh_mesh": {
+      "frame": 2055,
+      "geom1": "<unnamed:8>",
+      "geom2": "<unnamed:26>",
+      "penetration_mm": 78.34729272503965
+    },
+    "worst_mesh_ground": {
+      "frame": 58,
+      "geom": "<unnamed:12>",
+      "penetration_mm": 133.31214201946014
+    }
+  },
+  "max_support_error_mm": 7.273299118270007,
+  "max_root_correction_mm": 29.09023350277551,
+  "max_joint_step_rad": 1.4630850315093995,
+  "exact_full_checker_required": true,
+  "replay_allowed_only_after_full_checker": true
+}

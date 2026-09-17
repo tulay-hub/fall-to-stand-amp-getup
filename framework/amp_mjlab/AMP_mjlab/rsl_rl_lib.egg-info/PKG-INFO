@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: rsl-rl-lib
+Version: 2.3.1
+Summary: Fast and simple RL algorithms implemented in PyTorch
+Author-email: Clemens Schwarke <cschwarke@ethz.ch>, Mayank Mittal <mittalma@ethz.ch>, Nikita Rudin <rudinn@ethz.ch>, David Hoeller <holler.david78@gmail.com>
+Maintainer-email: Clemens Schwarke <cschwarke@ethz.ch>, Mayank Mittal <mittalma@ethz.ch>
+License: BSD-3-Clause
+Project-URL: Homepage, https://github.com/leggedrobotics/rsl_rl
+Project-URL: Issues, https://github.com/leggedrobotics/rsl_rl/issues
+Keywords: reinforcement-learning,isaac,leggedrobotics,rl-pytorch
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: torch>=1.10.0
+Requires-Dist: torchvision>=0.5.0
+Requires-Dist: numpy>=1.16.4
+Requires-Dist: GitPython
+Requires-Dist: onnx

@@ -1,0 +1,402 @@
+{
+ "robot": "Lens110 21dof",
+ "frequencies": {
+  "physics_hz": 500,
+  "timestep": 0.002,
+  "policy_hz": 100,
+  "decimation": 5
+ },
+ "mjcf_joint_order": [
+  "left_hip_pitch_joint",
+  "left_hip_roll_joint",
+  "left_hip_yaw_joint",
+  "left_knee_joint",
+  "left_ankle_pitch_joint",
+  "left_ankle_roll_joint",
+  "right_hip_pitch_joint",
+  "right_hip_roll_joint",
+  "right_hip_yaw_joint",
+  "right_knee_joint",
+  "right_ankle_pitch_joint",
+  "right_ankle_roll_joint",
+  "torso_yaw_joint",
+  "right_shoulder_pitch_joint",
+  "right_shoulder_roll_joint",
+  "right_shoulder_yaw_joint",
+  "right_elbow_joint",
+  "left_shoulder_pitch_joint",
+  "left_shoulder_roll_joint",
+  "left_shoulder_yaw_joint",
+  "left_elbow_joint"
+ ],
+ "default_joint_pos_rad": [
+  -0.14,
+  -0.01,
+  -0.1,
+  0.36,
+  -0.23804,
+  0.002027,
+  -0.14,
+  0.01,
+  0.1,
+  0.36,
+  -0.23804,
+  -0.002027,
+  0.0,
+  0.4,
+  -0.2,
+  0.0,
+  -0.8,
+  0.4,
+  0.2,
+  0.0,
+  -0.8
+ ],
+ "stiffness_kp": [
+  40.0,
+  40.0,
+  40.0,
+  40.0,
+  30.0,
+  30.0,
+  40.0,
+  40.0,
+  40.0,
+  40.0,
+  30.0,
+  30.0,
+  100.0,
+  20.0,
+  20.0,
+  20.0,
+  20.0,
+  20.0,
+  20.0,
+  20.0,
+  20.0
+ ],
+ "damping_kd": [
+  5.0,
+  5.0,
+  5.0,
+  5.0,
+  5.0,
+  5.0,
+  5.0,
+  5.0,
+  5.0,
+  5.0,
+  5.0,
+  5.0,
+  5.0,
+  1.0,
+  1.0,
+  1.0,
+  1.0,
+  1.0,
+  1.0,
+  1.0,
+  1.0
+ ],
+ "effort_limit_nm": [
+  80.0,
+  80.0,
+  80.0,
+  80.0,
+  36.0,
+  36.0,
+  80.0,
+  80.0,
+  80.0,
+  80.0,
+  36.0,
+  36.0,
+  80.0,
+  36.0,
+  36.0,
+  36.0,
+  36.0,
+  36.0,
+  36.0,
+  36.0,
+  36.0
+ ],
+ "action_scale": [
+  0.5,
+  0.5,
+  0.5,
+  0.5,
+  0.25,
+  0.25,
+  0.5,
+  0.5,
+  0.5,
+  0.5,
+  0.25,
+  0.25,
+  0.2,
+  0.45,
+  0.45,
+  0.45,
+  0.45,
+  0.45,
+  0.45,
+  0.45,
+  0.45
+ ],
+ "joint_vel_limit_rad_s": 10.4,
+ "pd_profile_source": "lens110RL/lens110/configs/robot_humanoid_lens110_config.yaml -> control.walk",
+ "joint_direction_from_real_config": {
+  "left_hip_pitch_joint": 1,
+  "left_hip_roll_joint": 1,
+  "left_hip_yaw_joint": -1,
+  "left_knee_joint": -1,
+  "left_ankle_pitch_joint": 1,
+  "left_ankle_roll_joint": -1,
+  "right_hip_pitch_joint": -1,
+  "right_hip_roll_joint": 1,
+  "right_hip_yaw_joint": -1,
+  "right_knee_joint": 1,
+  "right_ankle_pitch_joint": -1,
+  "right_ankle_roll_joint": 1,
+  "torso_yaw_joint": 1,
+  "right_shoulder_pitch_joint": -1,
+  "right_shoulder_roll_joint": 1,
+  "right_shoulder_yaw_joint": -1,
+  "right_elbow_joint": 1,
+  "left_shoulder_pitch_joint": 1,
+  "left_shoulder_roll_joint": 1,
+  "left_shoulder_yaw_joint": -1,
+  "left_elbow_joint": -1
+ },
+ "ankle_name_map": {
+  "left_ankle_pitch_joint": "left_ankle_upper_joint",
+  "left_ankle_roll_joint": "left_ankle_lower_joint",
+  "right_ankle_pitch_joint": "right_ankle_upper_joint",
+  "right_ankle_roll_joint": "right_ankle_lower_joint"
+ },
+ "observation_layout": {
+  "history": 4,
+  "per_frame": [
+   "base_ang_vel(3)",
+   "projected_gravity(3)",
+   "command(3)",
+   "joint_pos(21)",
+   "joint_vel(21)",
+   "actions(21)"
+  ],
+  "total": 288,
+  "command_zeroed": true
+ },
+ "amp_body_names": [
+  "pelvis",
+  "left_hip_roll_link",
+  "left_knee_link",
+  "left_ankle_roll_link",
+  "right_hip_roll_link",
+  "right_knee_link",
+  "right_ankle_roll_link",
+  "left_shoulder_roll_link",
+  "left_elbow_link",
+  "right_shoulder_roll_link",
+  "right_elbow_link"
+ ],
+ "anchor_body": "torso_yaw_link",
+ "root_body": "pelvis",
+ "fall_threshold_height_m": 0.35,
+ "notes": [
+  "action_scale 沿用参考框架惯例 0.25*effort/kp; 踝 walk 档 kp=5 会得到 1.8, 已单独压到 0.25。",
+  "joint_direction 直接抄实机配置, 符号语义以现有 rl_controller 为准, 未在本地重新定义。",
+  "踝 upper/lower 与 pitch/roll 的名义对应取自 legged_lab_lbot/scripts/sim2sim_ul/ul_full.py; 该文件里还有基于雅可比的真实耦合模型 AnkleModel, 实机下发前应复用它而不是线性换算。",
+  "command 已置 0 (基准动作=站立不动), 将来要接速度控制只改 env_cfgs.py 里 twist_cmd.ranges。"
+ ],
+ "pd_profile": "walk",
+ "default_joint_pos_deg": [
+  -8.02,
+  -0.57,
+  -5.73,
+  20.63,
+  -13.64,
+  0.12,
+  -8.02,
+  0.57,
+  5.73,
+  20.63,
+  -13.64,
+  -0.12,
+  0.0,
+  22.92,
+  -11.46,
+  0.0,
+  -45.84,
+  22.92,
+  11.46,
+  0.0,
+  -45.84
+ ],
+ "joint_limits_deg": {
+  "left_hip_pitch_joint": [
+   -124.96,
+   124.96
+  ],
+  "left_hip_roll_joint": [
+   -29.97,
+   89.95
+  ],
+  "left_hip_yaw_joint": [
+   -99.98,
+   99.98
+  ],
+  "left_knee_joint": [
+   -4.98,
+   139.97
+  ],
+  "left_ankle_pitch_joint": [
+   -59.99,
+   29.97
+  ],
+  "left_ankle_roll_joint": [
+   -14.95,
+   14.95
+  ],
+  "right_hip_pitch_joint": [
+   -124.96,
+   124.96
+  ],
+  "right_hip_roll_joint": [
+   -89.95,
+   29.97
+  ],
+  "right_hip_yaw_joint": [
+   -99.98,
+   99.98
+  ],
+  "right_knee_joint": [
+   -4.98,
+   139.97
+  ],
+  "right_ankle_pitch_joint": [
+   -59.99,
+   29.97
+  ],
+  "right_ankle_roll_joint": [
+   -14.95,
+   14.95
+  ],
+  "torso_yaw_joint": [
+   -104.97,
+   104.97
+  ],
+  "right_shoulder_pitch_joint": [
+   -209.99,
+   89.95
+  ],
+  "right_shoulder_roll_joint": [
+   -184.95,
+   4.98
+  ],
+  "right_shoulder_yaw_joint": [
+   -149.94,
+   149.94
+  ],
+  "right_elbow_joint": [
+   -134.99,
+   4.98
+  ],
+  "left_shoulder_pitch_joint": [
+   -209.99,
+   89.95
+  ],
+  "left_shoulder_roll_joint": [
+   -4.98,
+   184.95
+  ],
+  "left_shoulder_yaw_joint": [
+   -149.94,
+   149.94
+  ],
+  "left_elbow_joint": [
+   -134.99,
+   4.98
+  ]
+ },
+ "pd_profiles_all": {
+  "walk": {
+   "legs": [
+    40.0,
+    5.0,
+    80.0
+   ],
+   "ankles": [
+    30.0,
+    5.0,
+    36.0
+   ],
+   "arms": [
+    20.0,
+    1.0,
+    36.0
+   ],
+   "torso": [
+    100.0,
+    5.0,
+    80.0
+   ]
+  },
+  "stand": {
+   "legs": [
+    400.0,
+    5.0,
+    80.0
+   ],
+   "ankles": [
+    100.0,
+    5.0,
+    36.0
+   ],
+   "arms": [
+    100.0,
+    2.0,
+    36.0
+   ],
+   "torso": [
+    100.0,
+    5.0,
+    80.0
+   ]
+  },
+  "dance": {
+   "legs": [
+    40.0,
+    5.0,
+    80.0
+   ],
+   "ankles": [
+    10.0,
+    5.0,
+    36.0
+   ],
+   "arms": [
+    100.0,
+    5.0,
+    36.0
+   ],
+   "torso": [
+    100.0,
+    5.0,
+    80.0
+   ]
+  }
+ },
+ "policy_io": {
+  "obs_dim": 288,
+  "obs_layout": "4 frames x 72 (time-major): base_ang_vel3, projected_gravity3, command3, joint_pos_rel21, joint_vel_rel21, prev_actions21",
+  "action_dim": 21,
+  "action_formula": "q_des = default_joint_pos_rad + action_scale * action (不 clip action)",
+  "joint_order": "MJCF (同 mjcf_joint_order; 与 lens110_21dof.urdf/USD 逐位一致)"
+ },
+ "flat_foot_pelvis_height_m": 0.656756,
+ "reward_anchor_pelvis_height_m": 0.65,
+ "fall_detection_height_m": 0.44,
+ "source_snapshot": "lens110-amp-mjlab/AMP_mjlab/src (2026-09-08, 踝kp=30 / 官方平脚默认角)"
+}

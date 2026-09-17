@@ -1,0 +1,858 @@
+{
+  "source": "/home/srl/lense110/motion correct/walk0821/lens110_fall4_exact_mesh_speed_repaired_v2.pkl",
+  "output": "/home/srl/lense110/motion correct/walk0821/lens110_fall4_static_support_repaired.pkl",
+  "xml": "/home/srl/lense110/walk/colleague_sim2sim_work/humanoid_sim2sim/resource/lens_110/mjcf/lens110_21dof_sim_flatfoot.xml",
+  "frames": 2575,
+  "fps": 50.0,
+  "method": "static-support-only contact lock; rolling contacts left unconstrained",
+  "native_ccd": false,
+  "native_ccd_message": "native CCD 不可用，使用默认 CCD",
+  "static_step_mm_foot": 20.0,
+  "static_step_mm_body": 6.0,
+  "min_static_frames": 6,
+  "max_support_bodies_per_frame": 2,
+  "max_acceptable_error_mm": 20.0,
+  "static_contact_geoms": 20,
+  "static_contact_windows": 79,
+  "rolling_contact_breaks_skipped": 1790,
+  "accepted_frames": 539,
+  "rejected_frames": 15,
+  "max_accepted_error_mm": 19.96112300039344,
+  "max_attempt_error_mm": 45.59097263576933,
+  "max_root_correction_mm": 86.60254037844378,
+  "max_joint_step_rad": 0.06000000000000005,
+  "contact_paths_after": {
+    "6": [
+      {
+        "start": 157,
+        "end_exclusive": 167,
+        "geom_id": 6,
+        "geom": "<unnamed:6>",
+        "body": "left_hip_yaw_link",
+        "max_xy_drift_mm": 12.869165838946163,
+        "path_length_mm": 26.41160547077153,
+        "minimum_signed_distance_mm": 0.6946348809323266
+      },
+      {
+        "start": 170,
+        "end_exclusive": 176,
+        "geom_id": 6,
+        "geom": "<unnamed:6>",
+        "body": "left_hip_yaw_link",
+        "max_xy_drift_mm": 8.19734303982818,
+        "path_length_mm": 16.716684951253896,
+        "minimum_signed_distance_mm": 1.2376576444121241
+      },
+      {
+        "start": 2356,
+        "end_exclusive": 2362,
+        "geom_id": 6,
+        "geom": "<unnamed:6>",
+        "body": "left_hip_yaw_link",
+        "max_xy_drift_mm": 9.895175950810216,
+        "path_length_mm": 13.91458237948092,
+        "minimum_signed_distance_mm": 0.9978861099957104
+      },
+      {
+        "start": 2372,
+        "end_exclusive": 2379,
+        "geom_id": 6,
+        "geom": "<unnamed:6>",
+        "body": "left_hip_yaw_link",
+        "max_xy_drift_mm": 24.333035530793115,
+        "path_length_mm": 24.87458779471397,
+        "minimum_signed_distance_mm": 0.990445692818559
+      },
+      {
+        "start": 2383,
+        "end_exclusive": 2391,
+        "geom_id": 6,
+        "geom": "<unnamed:6>",
+        "body": "left_hip_yaw_link",
+        "max_xy_drift_mm": 16.47045130689331,
+        "path_length_mm": 25.440316494600093,
+        "minimum_signed_distance_mm": 0.9732919199585272
+      }
+    ],
+    "7": [
+      {
+        "start": 157,
+        "end_exclusive": 167,
+        "geom_id": 7,
+        "geom": "<unnamed:7>",
+        "body": "left_hip_yaw_link",
+        "max_xy_drift_mm": 12.869165838946163,
+        "path_length_mm": 26.41160547077153,
+        "minimum_signed_distance_mm": 0.6946348809323266
+      },
+      {
+        "start": 170,
+        "end_exclusive": 176,
+        "geom_id": 7,
+        "geom": "<unnamed:7>",
+        "body": "left_hip_yaw_link",
+        "max_xy_drift_mm": 8.19734303982818,
+        "path_length_mm": 16.716684951253896,
+        "minimum_signed_distance_mm": 1.2376576444121241
+      },
+      {
+        "start": 2356,
+        "end_exclusive": 2362,
+        "geom_id": 7,
+        "geom": "<unnamed:7>",
+        "body": "left_hip_yaw_link",
+        "max_xy_drift_mm": 9.895175950810216,
+        "path_length_mm": 13.91458237948092,
+        "minimum_signed_distance_mm": 0.9978861099957104
+      },
+      {
+        "start": 2372,
+        "end_exclusive": 2379,
+        "geom_id": 7,
+        "geom": "<unnamed:7>",
+        "body": "left_hip_yaw_link",
+        "max_xy_drift_mm": 24.333035530793115,
+        "path_length_mm": 24.87458779471397,
+        "minimum_signed_distance_mm": 0.990445692818559
+      },
+      {
+        "start": 2383,
+        "end_exclusive": 2391,
+        "geom_id": 7,
+        "geom": "<unnamed:7>",
+        "body": "left_hip_yaw_link",
+        "max_xy_drift_mm": 16.47045130689331,
+        "path_length_mm": 25.440316494600093,
+        "minimum_signed_distance_mm": 0.9732919199585272
+      }
+    ],
+    "12": [
+      {
+        "start": 1651,
+        "end_exclusive": 1668,
+        "geom_id": 12,
+        "geom": "<unnamed:12>",
+        "body": "left_ankle_roll_link",
+        "max_xy_drift_mm": 36.775248872170756,
+        "path_length_mm": 86.17604933387146,
+        "minimum_signed_distance_mm": 9.002288292209407
+      },
+      {
+        "start": 2096,
+        "end_exclusive": 2104,
+        "geom_id": 12,
+        "geom": "<unnamed:12>",
+        "body": "left_ankle_roll_link",
+        "max_xy_drift_mm": 38.07353247771802,
+        "path_length_mm": 97.52175362755659,
+        "minimum_signed_distance_mm": 11.297931740697125
+      }
+    ],
+    "13": [
+      {
+        "start": 1651,
+        "end_exclusive": 1668,
+        "geom_id": 13,
+        "geom": "<unnamed:13>",
+        "body": "left_ankle_roll_link",
+        "max_xy_drift_mm": 36.775248872170756,
+        "path_length_mm": 86.17604933387146,
+        "minimum_signed_distance_mm": 9.002288292209407
+      },
+      {
+        "start": 2096,
+        "end_exclusive": 2104,
+        "geom_id": 13,
+        "geom": "<unnamed:13>",
+        "body": "left_ankle_roll_link",
+        "max_xy_drift_mm": 38.07353247771802,
+        "path_length_mm": 97.52175362755659,
+        "minimum_signed_distance_mm": 11.297931740697125
+      }
+    ],
+    "14": [
+      {
+        "start": 242,
+        "end_exclusive": 251,
+        "geom_id": 14,
+        "geom": "left_ankle_roll_collision",
+        "body": "left_ankle_roll_link",
+        "max_xy_drift_mm": 139.92570941740445,
+        "path_length_mm": 142.18626409440625,
+        "minimum_signed_distance_mm": 4.967170825949829
+      },
+      {
+        "start": 260,
+        "end_exclusive": 266,
+        "geom_id": 14,
+        "geom": "left_ankle_roll_collision",
+        "body": "left_ankle_roll_link",
+        "max_xy_drift_mm": 11.324024339748519,
+        "path_length_mm": 19.70358314879605,
+        "minimum_signed_distance_mm": 0.9603252512143876
+      },
+      {
+        "start": 276,
+        "end_exclusive": 289,
+        "geom_id": 14,
+        "geom": "left_ankle_roll_collision",
+        "body": "left_ankle_roll_link",
+        "max_xy_drift_mm": 91.4150930362045,
+        "path_length_mm": 110.2405041262608,
+        "minimum_signed_distance_mm": 2.2417427756062787
+      },
+      {
+        "start": 307,
+        "end_exclusive": 319,
+        "geom_id": 14,
+        "geom": "left_ankle_roll_collision",
+        "body": "left_ankle_roll_link",
+        "max_xy_drift_mm": 7.877682421219292,
+        "path_length_mm": 19.388793884854994,
+        "minimum_signed_distance_mm": 1.3435575055715798
+      },
+      {
+        "start": 531,
+        "end_exclusive": 541,
+        "geom_id": 14,
+        "geom": "left_ankle_roll_collision",
+        "body": "left_ankle_roll_link",
+        "max_xy_drift_mm": 63.544820512804094,
+        "path_length_mm": 69.7372982345274,
+        "minimum_signed_distance_mm": 2.9033805419366314
+      },
+      {
+        "start": 656,
+        "end_exclusive": 662,
+        "geom_id": 14,
+        "geom": "left_ankle_roll_collision",
+        "body": "left_ankle_roll_link",
+        "max_xy_drift_mm": 12.923424107197302,
+        "path_length_mm": 12.939919191489222,
+        "minimum_signed_distance_mm": 1.6361312816142934
+      },
+      {
+        "start": 662,
+        "end_exclusive": 671,
+        "geom_id": 14,
+        "geom": "left_ankle_roll_collision",
+        "body": "left_ankle_roll_link",
+        "max_xy_drift_mm": 35.962755393828566,
+        "path_length_mm": 60.78417922264214,
+        "minimum_signed_distance_mm": 0.9888620876099402
+      },
+      {
+        "start": 891,
+        "end_exclusive": 897,
+        "geom_id": 14,
+        "geom": "left_ankle_roll_collision",
+        "body": "left_ankle_roll_link",
+        "max_xy_drift_mm": 41.63521458990222,
+        "path_length_mm": 42.04589876129032,
+        "minimum_signed_distance_mm": 0.9999568522230593
+      },
+      {
+        "start": 948,
+        "end_exclusive": 954,
+        "geom_id": 14,
+        "geom": "left_ankle_roll_collision",
+        "body": "left_ankle_roll_link",
+        "max_xy_drift_mm": 48.76688610643128,
+        "path_length_mm": 49.11220384236517,
+        "minimum_signed_distance_mm": 0.9321308648986143
+      },
+      {
+        "start": 970,
+        "end_exclusive": 977,
+        "geom_id": 14,
+        "geom": "left_ankle_roll_collision",
+        "body": "left_ankle_roll_link",
+        "max_xy_drift_mm": 23.8158413915299,
+        "path_length_mm": 24.317248444639038,
+        "minimum_signed_distance_mm": 36.8514275753461
+      },
+      {
+        "start": 1262,
+        "end_exclusive": 1268,
+        "geom_id": 14,
+        "geom": "left_ankle_roll_collision",
+        "body": "left_ankle_roll_link",
+        "max_xy_drift_mm": 26.018108819337762,
+        "path_length_mm": 26.39659977733729,
+        "minimum_signed_distance_mm": 3.5907589271574336
+      },
+      {
+        "start": 1333,
+        "end_exclusive": 1341,
+        "geom_id": 14,
+        "geom": "left_ankle_roll_collision",
+        "body": "left_ankle_roll_link",
+        "max_xy_drift_mm": 56.44016713629731,
+        "path_length_mm": 58.55520583577976,
+        "minimum_signed_distance_mm": 0.9892773467328406
+      },
+      {
+        "start": 1400,
+        "end_exclusive": 1416,
+        "geom_id": 14,
+        "geom": "left_ankle_roll_collision",
+        "body": "left_ankle_roll_link",
+        "max_xy_drift_mm": 86.99782943480854,
+        "path_length_mm": 172.73302843672383,
+        "minimum_signed_distance_mm": 0.9512757704769198
+      },
+      {
+        "start": 1425,
+        "end_exclusive": 1443,
+        "geom_id": 14,
+        "geom": "left_ankle_roll_collision",
+        "body": "left_ankle_roll_link",
+        "max_xy_drift_mm": 136.98289757898593,
+        "path_length_mm": 213.1448783050357,
+        "minimum_signed_distance_mm": 0.9265069922302221
+      },
+      {
+        "start": 1526,
+        "end_exclusive": 1533,
+        "geom_id": 14,
+        "geom": "left_ankle_roll_collision",
+        "body": "left_ankle_roll_link",
+        "max_xy_drift_mm": 31.175115030274593,
+        "path_length_mm": 31.295626455540738,
+        "minimum_signed_distance_mm": 5.570010668990849
+      },
+      {
+        "start": 1625,
+        "end_exclusive": 1631,
+        "geom_id": 14,
+        "geom": "left_ankle_roll_collision",
+        "body": "left_ankle_roll_link",
+        "max_xy_drift_mm": 189.69777132355023,
+        "path_length_mm": 275.58082760032784,
+        "minimum_signed_distance_mm": -8.384681207145993
+      },
+      {
+        "start": 1635,
+        "end_exclusive": 1649,
+        "geom_id": 14,
+        "geom": "left_ankle_roll_collision",
+        "body": "left_ankle_roll_link",
+        "max_xy_drift_mm": 186.76323330639326,
+        "path_length_mm": 231.254374177442,
+        "minimum_signed_distance_mm": -7.337266775942617
+      },
+      {
+        "start": 1649,
+        "end_exclusive": 1672,
+        "geom_id": 14,
+        "geom": "left_ankle_roll_collision",
+        "body": "left_ankle_roll_link",
+        "max_xy_drift_mm": 60.177968625106786,
+        "path_length_mm": 139.1049956641581,
+        "minimum_signed_distance_mm": 0.9888840787859732
+      },
+      {
+        "start": 1672,
+        "end_exclusive": 1680,
+        "geom_id": 14,
+        "geom": "left_ankle_roll_collision",
+        "body": "left_ankle_roll_link",
+        "max_xy_drift_mm": 96.19776252742895,
+        "path_length_mm": 97.70382560180752,
+        "minimum_signed_distance_mm": 8.735506036114643
+      },
+      {
+        "start": 1686,
+        "end_exclusive": 1701,
+        "geom_id": 14,
+        "geom": "left_ankle_roll_collision",
+        "body": "left_ankle_roll_link",
+        "max_xy_drift_mm": 173.84005113006577,
+        "path_length_mm": 286.48917670904433,
+        "minimum_signed_distance_mm": -9.85342017455161
+      },
+      {
+        "start": 1746,
+        "end_exclusive": 1753,
+        "geom_id": 14,
+        "geom": "left_ankle_roll_collision",
+        "body": "left_ankle_roll_link",
+        "max_xy_drift_mm": 54.319492747824,
+        "path_length_mm": 57.25028324083789,
+        "minimum_signed_distance_mm": 0.8286583823882698
+      },
+      {
+        "start": 1849,
+        "end_exclusive": 1859,
+        "geom_id": 14,
+        "geom": "left_ankle_roll_collision",
+        "body": "left_ankle_roll_link",
+        "max_xy_drift_mm": 152.2801995580855,
+        "path_length_mm": 432.2377745568886,
+        "minimum_signed_distance_mm": -3.99501489462617
+      },
+      {
+        "start": 1882,
+        "end_exclusive": 1890,
+        "geom_id": 14,
+        "geom": "left_ankle_roll_collision",
+        "body": "left_ankle_roll_link",
+        "max_xy_drift_mm": 28.71320400991781,
+        "path_length_mm": 66.23813283415082,
+        "minimum_signed_distance_mm": 0.9816737459689001
+      },
+      {
+        "start": 2074,
+        "end_exclusive": 2103,
+        "geom_id": 14,
+        "geom": "left_ankle_roll_collision",
+        "body": "left_ankle_roll_link",
+        "max_xy_drift_mm": 190.379911547888,
+        "path_length_mm": 725.5320851100684,
+        "minimum_signed_distance_mm": -29.654229362081306
+      },
+      {
+        "start": 2481,
+        "end_exclusive": 2489,
+        "geom_id": 14,
+        "geom": "left_ankle_roll_collision",
+        "body": "left_ankle_roll_link",
+        "max_xy_drift_mm": 135.29357562690026,
+        "path_length_mm": 366.64741147646464,
+        "minimum_signed_distance_mm": 15.181164658673113
+      }
+    ],
+    "20": [
+      {
+        "start": 2008,
+        "end_exclusive": 2021,
+        "geom_id": 20,
+        "geom": "<unnamed:20>",
+        "body": "right_hip_yaw_link",
+        "max_xy_drift_mm": 48.73559935586132,
+        "path_length_mm": 49.575640955956146,
+        "minimum_signed_distance_mm": 1.0284304462101768
+      }
+    ],
+    "21": [
+      {
+        "start": 2008,
+        "end_exclusive": 2021,
+        "geom_id": 21,
+        "geom": "<unnamed:21>",
+        "body": "right_hip_yaw_link",
+        "max_xy_drift_mm": 48.73559935586132,
+        "path_length_mm": 49.575640955956146,
+        "minimum_signed_distance_mm": 1.0284304462101768
+      }
+    ],
+    "26": [
+      {
+        "start": 1432,
+        "end_exclusive": 1444,
+        "geom_id": 26,
+        "geom": "<unnamed:26>",
+        "body": "right_ankle_roll_link",
+        "max_xy_drift_mm": 243.43230791210036,
+        "path_length_mm": 323.5856396545307,
+        "minimum_signed_distance_mm": -40.201840346717944
+      },
+      {
+        "start": 2029,
+        "end_exclusive": 2038,
+        "geom_id": 26,
+        "geom": "<unnamed:26>",
+        "body": "right_ankle_roll_link",
+        "max_xy_drift_mm": 89.16688811170478,
+        "path_length_mm": 114.20577124925308,
+        "minimum_signed_distance_mm": -22.18470262751336
+      }
+    ],
+    "27": [
+      {
+        "start": 1432,
+        "end_exclusive": 1444,
+        "geom_id": 27,
+        "geom": "<unnamed:27>",
+        "body": "right_ankle_roll_link",
+        "max_xy_drift_mm": 243.43230791210036,
+        "path_length_mm": 323.5856396545307,
+        "minimum_signed_distance_mm": -40.201840346717944
+      },
+      {
+        "start": 2029,
+        "end_exclusive": 2038,
+        "geom_id": 27,
+        "geom": "<unnamed:27>",
+        "body": "right_ankle_roll_link",
+        "max_xy_drift_mm": 89.16688811170478,
+        "path_length_mm": 114.20577124925308,
+        "minimum_signed_distance_mm": -22.18470262751336
+      }
+    ],
+    "28": [
+      {
+        "start": 17,
+        "end_exclusive": 26,
+        "geom_id": 28,
+        "geom": "right_ankle_roll_collision",
+        "body": "right_ankle_roll_link",
+        "max_xy_drift_mm": 26.870160243207096,
+        "path_length_mm": 34.7286881915434,
+        "minimum_signed_distance_mm": 0.9965047536634603
+      },
+      {
+        "start": 265,
+        "end_exclusive": 272,
+        "geom_id": 28,
+        "geom": "right_ankle_roll_collision",
+        "body": "right_ankle_roll_link",
+        "max_xy_drift_mm": 39.136332181011056,
+        "path_length_mm": 39.21390340101206,
+        "minimum_signed_distance_mm": 1.9055613114180163
+      },
+      {
+        "start": 281,
+        "end_exclusive": 294,
+        "geom_id": 28,
+        "geom": "right_ankle_roll_collision",
+        "body": "right_ankle_roll_link",
+        "max_xy_drift_mm": 38.88259908418975,
+        "path_length_mm": 76.25707275035191,
+        "minimum_signed_distance_mm": 0.9782332803922531
+      },
+      {
+        "start": 332,
+        "end_exclusive": 355,
+        "geom_id": 28,
+        "geom": "right_ankle_roll_collision",
+        "body": "right_ankle_roll_link",
+        "max_xy_drift_mm": 49.29123633131372,
+        "path_length_mm": 126.54693964668029,
+        "minimum_signed_distance_mm": 0.9834697333226256
+      },
+      {
+        "start": 377,
+        "end_exclusive": 385,
+        "geom_id": 28,
+        "geom": "right_ankle_roll_collision",
+        "body": "right_ankle_roll_link",
+        "max_xy_drift_mm": 41.993254068301795,
+        "path_length_mm": 85.44184719744571,
+        "minimum_signed_distance_mm": 0.9769553027253602
+      },
+      {
+        "start": 573,
+        "end_exclusive": 579,
+        "geom_id": 28,
+        "geom": "right_ankle_roll_collision",
+        "body": "right_ankle_roll_link",
+        "max_xy_drift_mm": 114.33453323387393,
+        "path_length_mm": 279.6807259823947,
+        "minimum_signed_distance_mm": 23.65653006991314
+      },
+      {
+        "start": 668,
+        "end_exclusive": 675,
+        "geom_id": 28,
+        "geom": "right_ankle_roll_collision",
+        "body": "right_ankle_roll_link",
+        "max_xy_drift_mm": 42.31395889759256,
+        "path_length_mm": 42.89235216093432,
+        "minimum_signed_distance_mm": 6.596632788325153
+      },
+      {
+        "start": 828,
+        "end_exclusive": 838,
+        "geom_id": 28,
+        "geom": "right_ankle_roll_collision",
+        "body": "right_ankle_roll_link",
+        "max_xy_drift_mm": 76.21040428909404,
+        "path_length_mm": 86.47972054963796,
+        "minimum_signed_distance_mm": -10.661308162663946
+      },
+      {
+        "start": 964,
+        "end_exclusive": 982,
+        "geom_id": 28,
+        "geom": "right_ankle_roll_collision",
+        "body": "right_ankle_roll_link",
+        "max_xy_drift_mm": 173.58282724469404,
+        "path_length_mm": 180.59709465219757,
+        "minimum_signed_distance_mm": 0.2414728963232582
+      },
+      {
+        "start": 1303,
+        "end_exclusive": 1323,
+        "geom_id": 28,
+        "geom": "right_ankle_roll_collision",
+        "body": "right_ankle_roll_link",
+        "max_xy_drift_mm": 102.65837603109101,
+        "path_length_mm": 170.57203616501502,
+        "minimum_signed_distance_mm": 1.6619196877441373
+      },
+      {
+        "start": 1330,
+        "end_exclusive": 1338,
+        "geom_id": 28,
+        "geom": "right_ankle_roll_collision",
+        "body": "right_ankle_roll_link",
+        "max_xy_drift_mm": 104.21029336195686,
+        "path_length_mm": 104.26680266849863,
+        "minimum_signed_distance_mm": 6.439837050835555
+      },
+      {
+        "start": 1375,
+        "end_exclusive": 1382,
+        "geom_id": 28,
+        "geom": "right_ankle_roll_collision",
+        "body": "right_ankle_roll_link",
+        "max_xy_drift_mm": 75.2696864355215,
+        "path_length_mm": 76.75610566639831,
+        "minimum_signed_distance_mm": 0.8669634453070535
+      },
+      {
+        "start": 1427,
+        "end_exclusive": 1455,
+        "geom_id": 28,
+        "geom": "right_ankle_roll_collision",
+        "body": "right_ankle_roll_link",
+        "max_xy_drift_mm": 232.60049640049198,
+        "path_length_mm": 993.1660253291517,
+        "minimum_signed_distance_mm": -53.669017721542694
+      },
+      {
+        "start": 1563,
+        "end_exclusive": 1571,
+        "geom_id": 28,
+        "geom": "right_ankle_roll_collision",
+        "body": "right_ankle_roll_link",
+        "max_xy_drift_mm": 70.31469525105739,
+        "path_length_mm": 71.87300544842431,
+        "minimum_signed_distance_mm": 6.533268532745266
+      },
+      {
+        "start": 1771,
+        "end_exclusive": 1786,
+        "geom_id": 28,
+        "geom": "right_ankle_roll_collision",
+        "body": "right_ankle_roll_link",
+        "max_xy_drift_mm": 71.4182906845595,
+        "path_length_mm": 105.41420079800757,
+        "minimum_signed_distance_mm": 3.0418660020540833
+      },
+      {
+        "start": 2027,
+        "end_exclusive": 2041,
+        "geom_id": 28,
+        "geom": "right_ankle_roll_collision",
+        "body": "right_ankle_roll_link",
+        "max_xy_drift_mm": 63.90604655331214,
+        "path_length_mm": 169.22673204797636,
+        "minimum_signed_distance_mm": -36.23392992838487
+      },
+      {
+        "start": 2265,
+        "end_exclusive": 2273,
+        "geom_id": 28,
+        "geom": "right_ankle_roll_collision",
+        "body": "right_ankle_roll_link",
+        "max_xy_drift_mm": 92.25908560201837,
+        "path_length_mm": 97.26724446946332,
+        "minimum_signed_distance_mm": 0.9826051804670624
+      },
+      {
+        "start": 2419,
+        "end_exclusive": 2429,
+        "geom_id": 28,
+        "geom": "right_ankle_roll_collision",
+        "body": "right_ankle_roll_link",
+        "max_xy_drift_mm": 75.63012896763477,
+        "path_length_mm": 108.39409832859576,
+        "minimum_signed_distance_mm": 0.5261330176316026
+      }
+    ],
+    "36": [
+      {
+        "start": 1937,
+        "end_exclusive": 1947,
+        "geom_id": 36,
+        "geom": "<unnamed:36>",
+        "body": "right_shoulder_yaw_link",
+        "max_xy_drift_mm": 31.1793788354773,
+        "path_length_mm": 34.365700856691355,
+        "minimum_signed_distance_mm": 7.547486547610976
+      },
+      {
+        "start": 1960,
+        "end_exclusive": 1971,
+        "geom_id": 36,
+        "geom": "<unnamed:36>",
+        "body": "right_shoulder_yaw_link",
+        "max_xy_drift_mm": 23.91074873760968,
+        "path_length_mm": 36.191171932338435,
+        "minimum_signed_distance_mm": 6.1684042528831196
+      }
+    ],
+    "37": [
+      {
+        "start": 1937,
+        "end_exclusive": 1947,
+        "geom_id": 37,
+        "geom": "<unnamed:37>",
+        "body": "right_shoulder_yaw_link",
+        "max_xy_drift_mm": 31.1793788354773,
+        "path_length_mm": 34.365700856691355,
+        "minimum_signed_distance_mm": 7.547486547610976
+      },
+      {
+        "start": 1960,
+        "end_exclusive": 1971,
+        "geom_id": 37,
+        "geom": "<unnamed:37>",
+        "body": "right_shoulder_yaw_link",
+        "max_xy_drift_mm": 23.91074873760968,
+        "path_length_mm": 36.191171932338435,
+        "minimum_signed_distance_mm": 6.1684042528831196
+      }
+    ],
+    "38": [
+      {
+        "start": 1940,
+        "end_exclusive": 1954,
+        "geom_id": 38,
+        "geom": "<unnamed:38>",
+        "body": "right_elbow_link",
+        "max_xy_drift_mm": 26.385331831121515,
+        "path_length_mm": 33.953548649963395,
+        "minimum_signed_distance_mm": 0.9996122025129478
+      },
+      {
+        "start": 1957,
+        "end_exclusive": 1967,
+        "geom_id": 38,
+        "geom": "<unnamed:38>",
+        "body": "right_elbow_link",
+        "max_xy_drift_mm": 26.324586755114737,
+        "path_length_mm": 29.850002883608397,
+        "minimum_signed_distance_mm": 1.2182513451488437
+      }
+    ],
+    "39": [
+      {
+        "start": 1940,
+        "end_exclusive": 1954,
+        "geom_id": 39,
+        "geom": "<unnamed:39>",
+        "body": "right_elbow_link",
+        "max_xy_drift_mm": 26.385331831121515,
+        "path_length_mm": 33.953548649963395,
+        "minimum_signed_distance_mm": 0.9996122025129478
+      },
+      {
+        "start": 1957,
+        "end_exclusive": 1967,
+        "geom_id": 39,
+        "geom": "<unnamed:39>",
+        "body": "right_elbow_link",
+        "max_xy_drift_mm": 26.324586755114737,
+        "path_length_mm": 29.850002883608397,
+        "minimum_signed_distance_mm": 1.2182513451488437
+      }
+    ],
+    "40": [
+      {
+        "start": 755,
+        "end_exclusive": 761,
+        "geom_id": 40,
+        "geom": "<unnamed:40>",
+        "body": "left_shoulder_pitch_link",
+        "max_xy_drift_mm": 19.701824809310352,
+        "path_length_mm": 19.753883144200646,
+        "minimum_signed_distance_mm": 7.333115912203238
+      }
+    ],
+    "41": [
+      {
+        "start": 755,
+        "end_exclusive": 761,
+        "geom_id": 41,
+        "geom": "<unnamed:41>",
+        "body": "left_shoulder_pitch_link",
+        "max_xy_drift_mm": 19.701824809310352,
+        "path_length_mm": 19.753883144200646,
+        "minimum_signed_distance_mm": 7.333115912203238
+      }
+    ],
+    "42": [
+      {
+        "start": 754,
+        "end_exclusive": 763,
+        "geom_id": 42,
+        "geom": "<unnamed:42>",
+        "body": "left_shoulder_roll_link",
+        "max_xy_drift_mm": 33.24468181883127,
+        "path_length_mm": 34.11510698964382,
+        "minimum_signed_distance_mm": 1.5809001685619246
+      }
+    ],
+    "43": [
+      {
+        "start": 754,
+        "end_exclusive": 763,
+        "geom_id": 43,
+        "geom": "<unnamed:43>",
+        "body": "left_shoulder_roll_link",
+        "max_xy_drift_mm": 33.24468181883127,
+        "path_length_mm": 34.11510698964382,
+        "minimum_signed_distance_mm": 1.5809001685619246
+      }
+    ],
+    "46": [
+      {
+        "start": 2313,
+        "end_exclusive": 2320,
+        "geom_id": 46,
+        "geom": "<unnamed:46>",
+        "body": "left_elbow_link",
+        "max_xy_drift_mm": 19.229320486428595,
+        "path_length_mm": 23.956505151807747,
+        "minimum_signed_distance_mm": 0.9980810134702853
+      },
+      {
+        "start": 2333,
+        "end_exclusive": 2343,
+        "geom_id": 46,
+        "geom": "<unnamed:46>",
+        "body": "left_elbow_link",
+        "max_xy_drift_mm": 31.97612434428226,
+        "path_length_mm": 34.567415631500225,
+        "minimum_signed_distance_mm": 0.9979467091861747
+      }
+    ],
+    "47": [
+      {
+        "start": 2313,
+        "end_exclusive": 2320,
+        "geom_id": 47,
+        "geom": "<unnamed:47>",
+        "body": "left_elbow_link",
+        "max_xy_drift_mm": 19.229320486428595,
+        "path_length_mm": 23.956505151807747,
+        "minimum_signed_distance_mm": 0.9980810134702853
+      },
+      {
+        "start": 2333,
+        "end_exclusive": 2343,
+        "geom_id": 47,
+        "geom": "<unnamed:47>",
+        "body": "left_elbow_link",
+        "max_xy_drift_mm": 31.97612434428226,
+        "path_length_mm": 34.567415631500225,
+        "minimum_signed_distance_mm": 0.9979467091861747
+      }
+    ]
+  },
+  "root_trajectory_changed": true,
+  "exact_mesh_ground_recheck_required": true
+}

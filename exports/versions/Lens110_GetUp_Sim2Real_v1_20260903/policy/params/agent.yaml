@@ -1,0 +1,91 @@
+seed: 42
+num_steps_per_env: 24
+max_iterations: 60000
+obs_groups:
+  actor: !!python/tuple
+  - actor
+  critic: !!python/tuple
+  - critic
+save_interval: 500
+experiment_name: getup_60k
+run_name: ''
+logger: tensorboard
+wandb_project: mjlab
+wandb_tags: !!python/tuple []
+resume: false
+load_run: .*
+load_checkpoint: model_.*.pt
+clip_actions: null
+upload_model: true
+algorithm:
+  num_learning_epochs: 5
+  num_mini_batches: 4
+  learning_rate: 0.001
+  schedule: adaptive
+  gamma: 0.99
+  lam: 0.95
+  entropy_coef: 0.005
+  desired_kl: 0.01
+  max_grad_norm: 1.0
+  value_loss_coef: 1.0
+  use_clipped_value_loss: true
+  clip_param: 0.2
+  normalize_advantage_per_mini_batch: false
+  optimizer: adam
+  share_cnn_encoders: false
+amp_reward_coef: 0.1
+amp_motion_files: "/home/tulay/\u684C\u9762/t800-urkl-tracker/lens110-amp-mjlab/AMP_mjlab/src/assets/motions/lens110"
+amp_num_preload_transitions: 200000
+amp_task_reward_lerp: 0.85
+amp_discr_hidden_dims:
+- 1024
+- 512
+- 256
+min_normalized_std:
+- 0.05
+- 0.05
+- 0.05
+- 0.05
+- 0.05
+- 0.05
+- 0.05
+- 0.05
+- 0.05
+- 0.05
+- 0.05
+- 0.05
+- 0.05
+- 0.05
+- 0.05
+- 0.05
+- 0.05
+- 0.05
+- 0.05
+- 0.05
+- 0.05
+amp_body_names: !!python/tuple
+- pelvis
+- left_hip_roll_link
+- left_knee_link
+- left_ankle_roll_link
+- right_hip_roll_link
+- right_knee_link
+- right_ankle_roll_link
+- left_shoulder_roll_link
+- left_elbow_link
+- right_shoulder_roll_link
+- right_elbow_link
+amp_anchor_name: torso_yaw_link
+policy:
+  actor_hidden_dims:
+  - 512
+  - 256
+  - 128
+  critic_hidden_dims:
+  - 512
+  - 256
+  - 128
+  activation: elu
+  init_noise_std: 1.0
+  noise_std_type: scalar
+empirical_normalization: true

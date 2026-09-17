@@ -1,0 +1,206 @@
+# Lens110「倒地自动起身」实机部署参数 (从训练快照与实机配置生成, 2026-09-03)
+robot_model: Lens110 21dof (MJCF, 平脚底碰撞盒)
+training_run: lens110-amp-mjlab getup_v5/2026-09-08_15-43-38_v5f (model_72500)
+frequencies:
+  physics_hz: 500
+  timestep: 0.002
+  policy_hz: 100
+  decimation: 5
+observation:
+  dim: 288
+  history: 4
+  ordering: time_major
+  terms:
+  - base_ang_vel
+  - projected_gravity
+  - command
+  - joint_pos_rel
+  - joint_vel_rel
+  - prev_actions
+  command_always_zero: true
+  needs_motion_file: false
+action:
+  dim: 21
+  joint_order: MJCF 顺序
+  use_default_offset: true
+  formula: q_des[i] = default_joint_pos[i] + action_scale[i] * action[i]  (不 clip action)
+  clip_actions: null
+  joint_pos_limits_clamped_at_target: false
+joint_names_mjcf:
+- left_hip_pitch_joint
+- left_hip_roll_joint
+- left_hip_yaw_joint
+- left_knee_joint
+- left_ankle_pitch_joint
+- left_ankle_roll_joint
+- right_hip_pitch_joint
+- right_hip_roll_joint
+- right_hip_yaw_joint
+- right_knee_joint
+- right_ankle_pitch_joint
+- right_ankle_roll_joint
+- torso_yaw_joint
+- right_shoulder_pitch_joint
+- right_shoulder_roll_joint
+- right_shoulder_yaw_joint
+- right_elbow_joint
+- left_shoulder_pitch_joint
+- left_shoulder_roll_joint
+- left_shoulder_yaw_joint
+- left_elbow_joint
+default_joint_pos_rad:
+- -0.14
+- -0.01
+- -0.1
+- 0.36
+- -0.23804
+- 0.002027
+- -0.14
+- 0.01
+- 0.1
+- 0.36
+- -0.23804
+- -0.002027
+- 0.0
+- 0.4
+- -0.2
+- 0.0
+- -0.8
+- 0.4
+- 0.2
+- 0.0
+- -0.8
+action_scale:
+- 0.5
+- 0.5
+- 0.5
+- 0.5
+- 0.25
+- 0.25
+- 0.5
+- 0.5
+- 0.5
+- 0.5
+- 0.25
+- 0.25
+- 0.2
+- 0.45
+- 0.45
+- 0.45
+- 0.45
+- 0.45
+- 0.45
+- 0.45
+- 0.45
+joint_stiffness_kp:
+- 40.0
+- 40.0
+- 40.0
+- 40.0
+- 30.0
+- 30.0
+- 40.0
+- 40.0
+- 40.0
+- 40.0
+- 30.0
+- 30.0
+- 100.0
+- 20.0
+- 20.0
+- 20.0
+- 20.0
+- 20.0
+- 20.0
+- 20.0
+- 20.0
+joint_damping_kd:
+- 5.0
+- 5.0
+- 5.0
+- 5.0
+- 5.0
+- 5.0
+- 5.0
+- 5.0
+- 5.0
+- 5.0
+- 5.0
+- 5.0
+- 5.0
+- 1.0
+- 1.0
+- 1.0
+- 1.0
+- 1.0
+- 1.0
+- 1.0
+- 1.0
+effort_limit_nm:
+- 80.0
+- 80.0
+- 80.0
+- 80.0
+- 36.0
+- 36.0
+- 80.0
+- 80.0
+- 80.0
+- 80.0
+- 36.0
+- 36.0
+- 80.0
+- 36.0
+- 36.0
+- 36.0
+- 36.0
+- 36.0
+- 36.0
+- 36.0
+- 36.0
+joint_velocity_limit_rad_s: 10.4
+pd_profile_source: lens110RL/lens110/configs/robot_humanoid_lens110_config.yaml -> control.walk
+# v2 起 control.walk 的踝刚度已从 5.0 提到 30.0 (左右 ankle_upper/lower 四条), 训练/播放/实机三侧同步。
+# 策略与 PD 增益必须配对: 实测用 kp=5 播这份 onnx 会漂移 16 m、用 kp=30 才正常。
+# 0.656756 = 官方标准站姿 (新 default_joint_pos_rad) 在 MJCF 下脚底 8 角精确贴地的骨盆高度。
+standing_pelvis_height_m: 0.656756
+# 与训练侧 terminations.bad_base_height.minimum_height 保持一致 (v5c = 0.44)。
+fall_detection_height_m: 0.44
+fall_detection_tilt_deg: 70.0
+real_robot_mapping:
+  # 实机 SDK 数组第 k 个元素 = 本文件 joint_names_mjcf[ joint_order[k] ]。
+  # 即: 前 12 个 (双腿, 踝按 upper/lower) 位置相同; 左臂 4 个在 SDK 的 12~15, 右臂在 16~19;
+  # torso_yaw 在 SDK 里排最后 (第 21 个)。策略向量本身仍是 MJCF 顺序, 未被置换。
+  joint_order: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 17, 18, 19, 20, 13, 14, 15, 16, 12]
+  joint_direction:
+    left_hip_pitch_joint: 1
+    left_hip_roll_joint: 1
+    left_hip_yaw_joint: -1
+    left_knee_joint: -1
+    left_ankle_pitch_joint: 1
+    left_ankle_roll_joint: -1
+    right_hip_pitch_joint: -1
+    right_hip_roll_joint: 1
+    right_hip_yaw_joint: -1
+    right_knee_joint: 1
+    right_ankle_pitch_joint: -1
+    right_ankle_roll_joint: 1
+    torso_yaw_joint: 1
+    right_shoulder_pitch_joint: -1
+    right_shoulder_roll_joint: 1
+    right_shoulder_yaw_joint: -1
+    right_elbow_joint: 1
+    left_shoulder_pitch_joint: 1
+    left_shoulder_roll_joint: 1
+    left_shoulder_yaw_joint: -1
+    left_elbow_joint: -1
+  ankle_name_map:
+    left_ankle_pitch_joint: left_ankle_upper_joint
+    left_ankle_roll_joint: left_ankle_lower_joint
+    right_ankle_pitch_joint: right_ankle_upper_joint
+    right_ankle_roll_joint: right_ankle_lower_joint
+  note: 实机关节顺序与 MJCF 不同(实机 torso 在第21位且左臂在前); 踝 pitch<->upper / roll<->lower 同名同侧
+  policy_vector_order: MJCF (21 维, 见 joint_names_mjcf; 与 USD/URDF 的 lens110_21dof 逐位一致)
+deploy_entry: policy/Lens110-AMP-GetUp_model_72500.onnx
+sim2sim: replay/play_lens110_amp_getup.py
+known_issues_see: docs/KNOWN_ISSUES.md

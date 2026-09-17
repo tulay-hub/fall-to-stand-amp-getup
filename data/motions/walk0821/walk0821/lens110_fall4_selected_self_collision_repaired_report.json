@@ -1,0 +1,597 @@
+{
+  "source": "/home/srl/lense110/motion correct/walk0821/lens110_fall4_self_collision_repaired.pkl",
+  "output": "/home/srl/lense110/motion correct/walk0821/lens110_fall4_selected_self_collision_repaired.pkl",
+  "xml": "/home/srl/lense110/walk/colleague_sim2sim_work/humanoid_sim2sim/resource/lens_110/mjcf/lens110_21dof_sim_flatfoot.xml",
+  "frames": 2575,
+  "fps": 50.0,
+  "method": "selected body-pair exact mesh-mesh IK with root fixed and full collision gate",
+  "selected_pairs": [
+    "left_ankle_roll_link:right_hip_yaw_link",
+    "left_knee_link:left_ankle_roll_link"
+  ],
+  "extreme_windows": [
+    [
+      44,
+      57
+    ],
+    [
+      52,
+      65
+    ],
+    [
+      829,
+      845
+    ],
+    [
+      2268,
+      2291
+    ]
+  ],
+  "native_ccd": false,
+  "native_ccd_message": "native CCD 不可用，使用默认 CCD",
+  "accepted_frames": 16,
+  "rejected_frames": 44,
+  "after_full_scan": {
+    "checked_frames": 2575,
+    "stride": 1,
+    "mesh_mesh_collision_count": 2384,
+    "mesh_ground_collision_count": 6,
+    "max_mesh_mesh_penetration_mm": 19.78146674841597,
+    "max_mesh_ground_penetration_mm": 0.0367717883819757,
+    "worst_mesh_mesh": {
+      "frame": 837,
+      "geom1": "<unnamed:12>",
+      "geom2": "<unnamed:20>",
+      "penetration_mm": 19.78146674841597
+    },
+    "worst_mesh_ground": {
+      "frame": 2283,
+      "geom": "<unnamed:12>",
+      "penetration_mm": 0.0367717883819757
+    }
+  },
+  "max_joint_step_rad": 1.4630850553512573,
+  "frame_stats": [
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_active_signed_distance_mm": 0.0,
+      "candidate_active_signed_distance_mm": 0.3333911402276166,
+      "frame": 44
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_active_signed_distance_mm": 0.0,
+      "candidate_active_signed_distance_mm": 0.3561728659010711,
+      "frame": 45
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_active_signed_distance_mm": 0.0,
+      "candidate_active_signed_distance_mm": 0.4822975510408603,
+      "frame": 46
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_active_signed_distance_mm": 0.05145562341332563,
+      "candidate_active_signed_distance_mm": 0.08303709063412652,
+      "frame": 47
+    },
+    {
+      "source_mesh_penetration_mm": 2.166614504609481,
+      "candidate_mesh_penetration_mm": 0.753240333567557,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 1.1197567778835558,
+      "source_active_signed_distance_mm": -2.166614504609481,
+      "candidate_active_signed_distance_mm": -0.753240333567557,
+      "frame": 48
+    },
+    {
+      "source_mesh_penetration_mm": 4.452220189229449,
+      "candidate_mesh_penetration_mm": 2.191796284836928,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 2.41011651374394,
+      "source_active_signed_distance_mm": -4.452220189229449,
+      "candidate_active_signed_distance_mm": -2.191796284836928,
+      "frame": 49
+    },
+    {
+      "source_mesh_penetration_mm": 6.143951475095124,
+      "candidate_mesh_penetration_mm": 2.9334304465579573,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 3.491592112655262,
+      "source_active_signed_distance_mm": -6.143951475095124,
+      "candidate_active_signed_distance_mm": -2.9334304465579573,
+      "frame": 50
+    },
+    {
+      "source_mesh_penetration_mm": 3.5522065482472636,
+      "candidate_mesh_penetration_mm": 3.5032968971732754,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0019250884337601581,
+      "source_active_signed_distance_mm": -3.5522065482472636,
+      "candidate_active_signed_distance_mm": -3.5032968971732754,
+      "frame": 51
+    },
+    {
+      "source_mesh_penetration_mm": 1.143519980913488,
+      "candidate_mesh_penetration_mm": 1.0296650901016489,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0005335621324903395,
+      "source_active_signed_distance_mm": -1.143519980913488,
+      "candidate_active_signed_distance_mm": -1.0296650901016489,
+      "frame": 52
+    },
+    {
+      "source_mesh_penetration_mm": 0.9114627757255171,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_active_signed_distance_mm": -0.9114627757255171,
+      "candidate_active_signed_distance_mm": 0.3472995749905458,
+      "frame": 53
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_active_signed_distance_mm": 0.4036423974510082,
+      "candidate_active_signed_distance_mm": 0.49965405688675635,
+      "frame": 54
+    },
+    {
+      "source_mesh_penetration_mm": 1.9742662007837253,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_active_signed_distance_mm": -1.9742662007837253,
+      "candidate_active_signed_distance_mm": 0.3101591491291296,
+      "frame": 55
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_active_signed_distance_mm": 0.1891616186781562,
+      "candidate_active_signed_distance_mm": 0.4608355226362889,
+      "frame": 56
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_active_signed_distance_mm": 0.9042089970718334,
+      "candidate_active_signed_distance_mm": 0.49527957582626725,
+      "frame": 57
+    },
+    {
+      "source_mesh_penetration_mm": 6.475089873327814,
+      "candidate_mesh_penetration_mm": 1.6312846958677076,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 13.371689487463243,
+      "source_active_signed_distance_mm": -6.475089873327814,
+      "candidate_active_signed_distance_mm": -1.6312846958677076,
+      "frame": 58
+    },
+    {
+      "source_mesh_penetration_mm": 4.150166003167669,
+      "candidate_mesh_penetration_mm": 8.08660757236997,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 101.35047209695786,
+      "source_active_signed_distance_mm": -4.150166003167669,
+      "candidate_active_signed_distance_mm": -8.08660757236997,
+      "frame": 59
+    },
+    {
+      "source_mesh_penetration_mm": 1.7971277889140198,
+      "candidate_mesh_penetration_mm": 5.763994131009219,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 109.70663774820616,
+      "source_active_signed_distance_mm": -1.7971277889140198,
+      "candidate_active_signed_distance_mm": -5.763994131009219,
+      "frame": 60
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 4.3397625848607655,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 65.57464560781109,
+      "source_active_signed_distance_mm": 0.5745622918857342,
+      "candidate_active_signed_distance_mm": -4.3397625848607655,
+      "frame": 61
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 4.170044655694885,
+      "source_active_signed_distance_mm": 1.4113013518984097,
+      "candidate_active_signed_distance_mm": 2.7540983446324545,
+      "frame": 62
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_active_signed_distance_mm": 1.557512165187404,
+      "candidate_active_signed_distance_mm": 1.4639351327785637,
+      "frame": 63
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_active_signed_distance_mm": 1.7040947970448246,
+      "candidate_active_signed_distance_mm": 1.61028021610518,
+      "frame": 64
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 129.51112663832143,
+      "source_active_signed_distance_mm": 14.77392801971335,
+      "candidate_active_signed_distance_mm": 12.2207532284303,
+      "frame": 829
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 123.88573857576421,
+      "source_active_signed_distance_mm": 14.455548289661772,
+      "candidate_active_signed_distance_mm": 12.296372998507916,
+      "frame": 830
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 131.39606837873978,
+      "source_active_signed_distance_mm": 14.21037887311536,
+      "candidate_active_signed_distance_mm": 11.982037562443418,
+      "frame": 831
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 130.75390555813283,
+      "source_active_signed_distance_mm": 9.71991033663056,
+      "candidate_active_signed_distance_mm": 11.731851775041745,
+      "frame": 832
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 127.26567285250827,
+      "source_active_signed_distance_mm": 2.1701568425377054,
+      "candidate_active_signed_distance_mm": 11.430144257210229,
+      "frame": 833
+    },
+    {
+      "source_mesh_penetration_mm": 4.514989271331443,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 119.29596404194587,
+      "source_active_signed_distance_mm": -4.514989271331443,
+      "candidate_active_signed_distance_mm": 11.106121124938257,
+      "frame": 834
+    },
+    {
+      "source_mesh_penetration_mm": 9.892580385722459,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 110.90707377083994,
+      "source_active_signed_distance_mm": -9.892580385722459,
+      "candidate_active_signed_distance_mm": 10.79535873689534,
+      "frame": 835
+    },
+    {
+      "source_mesh_penetration_mm": 15.125162777644077,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 102.21854013550144,
+      "source_active_signed_distance_mm": -15.125162777644077,
+      "candidate_active_signed_distance_mm": 10.56060588616261,
+      "frame": 836
+    },
+    {
+      "source_mesh_penetration_mm": 19.78146674841597,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 91.81896351655503,
+      "source_active_signed_distance_mm": -19.78146674841597,
+      "candidate_active_signed_distance_mm": 10.38203473953186,
+      "frame": 837
+    },
+    {
+      "source_mesh_penetration_mm": 9.143280749353002,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 93.1166918967922,
+      "source_active_signed_distance_mm": -9.143280749353002,
+      "candidate_active_signed_distance_mm": 10.248859727774468,
+      "frame": 838
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 81.93999843968686,
+      "source_active_signed_distance_mm": 4.95587579392754,
+      "candidate_active_signed_distance_mm": 10.157061329827913,
+      "frame": 839
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 72.0473723387797,
+      "source_active_signed_distance_mm": 12.212412774922418,
+      "candidate_active_signed_distance_mm": 10.102746358090934,
+      "frame": 840
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 57.441371660387084,
+      "source_active_signed_distance_mm": 11.921247065362886,
+      "candidate_active_signed_distance_mm": 9.651164699815574,
+      "frame": 841
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 42.148689441681974,
+      "source_active_signed_distance_mm": 11.637415019421834,
+      "candidate_active_signed_distance_mm": 9.32103399503489,
+      "frame": 842
+    },
+    {
+      "source_mesh_penetration_mm": 1.114786367239494,
+      "candidate_mesh_penetration_mm": 1.114786367239529,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 27.797197984466322,
+      "source_active_signed_distance_mm": 11.086183736097976,
+      "candidate_active_signed_distance_mm": 9.030194631317219,
+      "frame": 843
+    },
+    {
+      "source_mesh_penetration_mm": 9.443941962831612,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 14.820576536675004,
+      "source_active_signed_distance_mm": 0.0,
+      "candidate_active_signed_distance_mm": 8.54584228954504,
+      "frame": 844
+    },
+    {
+      "source_mesh_penetration_mm": 0.38871871617564363,
+      "candidate_mesh_penetration_mm": 2.9535759785441575,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_active_signed_distance_mm": -0.38871871617564363,
+      "candidate_active_signed_distance_mm": 0.1731523577776008,
+      "frame": 2268
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 7.380855082507515,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_active_signed_distance_mm": 0.6870352045846564,
+      "candidate_active_signed_distance_mm": 0.4973796558307268,
+      "frame": 2269
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_active_signed_distance_mm": 0.9933472979362632,
+      "candidate_active_signed_distance_mm": 0.797235001821991,
+      "frame": 2270
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_active_signed_distance_mm": 0.536142684592189,
+      "candidate_active_signed_distance_mm": 0.8333673623268398,
+      "frame": 2271
+    },
+    {
+      "source_mesh_penetration_mm": 3.8896305743830957,
+      "candidate_mesh_penetration_mm": 3.8896305743836663,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.00023924970071753648,
+      "source_active_signed_distance_mm": 0.9340351493052609,
+      "candidate_active_signed_distance_mm": 0.6234064753783222,
+      "frame": 2272
+    },
+    {
+      "source_mesh_penetration_mm": 7.413526726081548,
+      "candidate_mesh_penetration_mm": 4.890018071166954,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.00017736432265935687,
+      "source_active_signed_distance_mm": 0.9595725962055058,
+      "candidate_active_signed_distance_mm": 0.8921393856265926,
+      "frame": 2273
+    },
+    {
+      "source_mesh_penetration_mm": 12.290224450265807,
+      "candidate_mesh_penetration_mm": 12.54803917977295,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.009851729193710579,
+      "source_active_signed_distance_mm": -12.290224450265807,
+      "candidate_active_signed_distance_mm": 0.4819471260412663,
+      "frame": 2274
+    },
+    {
+      "source_mesh_penetration_mm": 14.990666674420678,
+      "candidate_mesh_penetration_mm": 10.597997416219359,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.012074512204307553,
+      "source_active_signed_distance_mm": -14.990666674420678,
+      "candidate_active_signed_distance_mm": 0.35654812381877427,
+      "frame": 2275
+    },
+    {
+      "source_mesh_penetration_mm": 17.43462722263028,
+      "candidate_mesh_penetration_mm": 9.626137874411302,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0037449723104820976,
+      "source_active_signed_distance_mm": -17.43462722263028,
+      "candidate_active_signed_distance_mm": 0.46544892893599094,
+      "frame": 2276
+    },
+    {
+      "source_mesh_penetration_mm": 19.455688172594435,
+      "candidate_mesh_penetration_mm": 1.2199329671797385,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_active_signed_distance_mm": -19.455688172594435,
+      "candidate_active_signed_distance_mm": 0.4461543590154822,
+      "frame": 2277
+    },
+    {
+      "source_mesh_penetration_mm": 19.707561342148026,
+      "candidate_mesh_penetration_mm": 0.588102184154372,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.004391579113610655,
+      "source_active_signed_distance_mm": -19.707561342148026,
+      "candidate_active_signed_distance_mm": 0.47570555858327085,
+      "frame": 2278
+    },
+    {
+      "source_mesh_penetration_mm": 18.407345078365687,
+      "candidate_mesh_penetration_mm": 0.06909492905637707,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_active_signed_distance_mm": -18.407345078365687,
+      "candidate_active_signed_distance_mm": 0.27210710557173234,
+      "frame": 2279
+    },
+    {
+      "source_mesh_penetration_mm": 16.356123125130622,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_active_signed_distance_mm": -16.356123125130622,
+      "candidate_active_signed_distance_mm": 0.48295615044608026,
+      "frame": 2280
+    },
+    {
+      "source_mesh_penetration_mm": 13.989919143636147,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_active_signed_distance_mm": -13.989919143636147,
+      "candidate_active_signed_distance_mm": 0.4858843302800885,
+      "frame": 2281
+    },
+    {
+      "source_mesh_penetration_mm": 11.367682438764055,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_active_signed_distance_mm": -11.367682438764055,
+      "candidate_active_signed_distance_mm": 0.4884916959207676,
+      "frame": 2282
+    },
+    {
+      "source_mesh_penetration_mm": 8.945157913945671,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0367717883819757,
+      "source_active_signed_distance_mm": -8.945157913945671,
+      "candidate_active_signed_distance_mm": 0.2530167110302587,
+      "frame": 2283
+    },
+    {
+      "source_mesh_penetration_mm": 6.588756463482654,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.008007233450818552,
+      "source_active_signed_distance_mm": -6.588756463482654,
+      "candidate_active_signed_distance_mm": 0.4869094644326011,
+      "frame": 2284
+    },
+    {
+      "source_mesh_penetration_mm": 4.329782141375946,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.013592546139015727,
+      "source_active_signed_distance_mm": -4.329782141375946,
+      "candidate_active_signed_distance_mm": 0.26094197678360914,
+      "frame": 2285
+    },
+    {
+      "source_mesh_penetration_mm": 2.29093099482587,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.003509789651398587,
+      "source_active_signed_distance_mm": -2.29093099482587,
+      "candidate_active_signed_distance_mm": 0.4732870617338063,
+      "frame": 2286
+    },
+    {
+      "source_mesh_penetration_mm": 0.17469677572445294,
+      "candidate_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.2964876074100786,
+      "source_active_signed_distance_mm": -0.17469677572445294,
+      "candidate_active_signed_distance_mm": 0.3179150152216704,
+      "frame": 2287
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 2.092335805189814,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 139.794896240902,
+      "source_active_signed_distance_mm": 1.0003282803561848,
+      "candidate_active_signed_distance_mm": -2.092335805189814,
+      "frame": 2288
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.8645639143212633,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 141.75422624665845,
+      "source_active_signed_distance_mm": 0.7938923205885311,
+      "candidate_active_signed_distance_mm": -0.8645639143212633,
+      "frame": 2289
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 1.0206244095046408,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 132.34090086937672,
+      "source_active_signed_distance_mm": 0.6447995856083026,
+      "candidate_active_signed_distance_mm": -1.0206244095046408,
+      "frame": 2290
+    }
+  ],
+  "replay_allowed_only_after_full_checker": true
+}

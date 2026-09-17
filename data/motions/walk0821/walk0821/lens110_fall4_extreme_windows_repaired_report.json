@@ -1,0 +1,1444 @@
+{
+  "source": "/home/srl/lense110/motion correct/walk0821/lens110_fall4_joint_mesh_ground_repaired.pkl",
+  "output": "/home/srl/lense110/motion correct/walk0821/lens110_fall4_extreme_windows_repaired.pkl",
+  "xml": "/home/srl/lense110/walk/colleague_sim2sim_work/humanoid_sim2sim/resource/lens_110/mjcf/lens110_21dof_sim_flatfoot.xml",
+  "frames": 2575,
+  "fps": 50.0,
+  "method": "targeted extreme collision-window repair with full mesh acceptance gate",
+  "native_ccd": false,
+  "native_ccd_message": "native CCD 不可用，使用默认 CCD",
+  "extreme_windows": [
+    [
+      51,
+      67
+    ],
+    [
+      1445,
+      1456
+    ],
+    [
+      1698,
+      1709
+    ],
+    [
+      1895,
+      1908
+    ],
+    [
+      2044,
+      2067
+    ],
+    [
+      2076,
+      2087
+    ],
+    [
+      2265,
+      2282
+    ],
+    [
+      2400,
+      2411
+    ],
+    [
+      2424,
+      2448
+    ]
+  ],
+  "accepted_frames": 34,
+  "rejected_frames": 103,
+  "after_full_scan": {
+    "checked_frames": 2575,
+    "stride": 1,
+    "mesh_mesh_collision_count": 2472,
+    "mesh_ground_collision_count": 274,
+    "max_mesh_mesh_penetration_mm": 19.78146674841597,
+    "max_mesh_ground_penetration_mm": 133.31214201946014,
+    "worst_mesh_mesh": {
+      "frame": 837,
+      "geom1": "<unnamed:12>",
+      "geom2": "<unnamed:20>",
+      "penetration_mm": 19.78146674841597
+    },
+    "worst_mesh_ground": {
+      "frame": 58,
+      "geom": "<unnamed:12>",
+      "penetration_mm": 133.31214201946014
+    }
+  },
+  "max_root_correction_mm": 56.88806745552299,
+  "max_joint_step_rad": 1.4630850553512573,
+  "frame_stats": [
+    {
+      "source_mesh_penetration_mm": 3.5522065482472636,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 3.503296922490093,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.9757684598895615,
+      "frame": 51
+    },
+    {
+      "source_mesh_penetration_mm": 1.143519980913488,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 1.0296633624651446,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 0.37255091677419233,
+      "frame": 52
+    },
+    {
+      "source_mesh_penetration_mm": 0.9114627757255247,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 1.6620391109657737,
+      "frame": 53
+    },
+    {
+      "source_mesh_penetration_mm": 3.397521717703026,
+      "source_ground_penetration_mm": 4.893157630186537,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.554776200658542,
+      "frame": 54
+    },
+    {
+      "source_mesh_penetration_mm": 6.229408992859491,
+      "source_ground_penetration_mm": 14.090671400374315,
+      "candidate_mesh_penetration_mm": 1.9742660015910196,
+      "candidate_ground_penetration_mm": 1.013792014446041,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 15.554776199274313,
+      "frame": 55
+    },
+    {
+      "source_mesh_penetration_mm": 9.094100924387334,
+      "source_ground_penetration_mm": 41.61821411144334,
+      "candidate_mesh_penetration_mm": 4.414141574470072,
+      "candidate_ground_penetration_mm": 21.507595346595366,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 23.554776199274308,
+      "frame": 56
+    },
+    {
+      "source_mesh_penetration_mm": 8.765970882485789,
+      "source_ground_penetration_mm": 121.24603759772451,
+      "candidate_mesh_penetration_mm": 6.9483543917055774,
+      "candidate_ground_penetration_mm": 65.29681198444996,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 31.554776199274304,
+      "frame": 57
+    },
+    {
+      "source_mesh_penetration_mm": 6.47508987332781,
+      "source_ground_penetration_mm": 133.31214201946014,
+      "candidate_mesh_penetration_mm": 9.70260681015525,
+      "candidate_ground_penetration_mm": 89.81439243389119,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 39.55477619552435,
+      "frame": 58
+    },
+    {
+      "source_mesh_penetration_mm": 4.150166003167672,
+      "source_ground_penetration_mm": 117.37553136468013,
+      "candidate_mesh_penetration_mm": 8.086607572369955,
+      "candidate_ground_penetration_mm": 211.72601409496454,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999999999938,
+      "frame": 59
+    },
+    {
+      "source_mesh_penetration_mm": 1.797127788914021,
+      "source_ground_penetration_mm": 68.75178544715855,
+      "candidate_mesh_penetration_mm": 5.7639941310091425,
+      "candidate_ground_penetration_mm": 200.08216679903316,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999999999998,
+      "frame": 60
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 23.0121466861031,
+      "candidate_mesh_penetration_mm": 4.339762584860833,
+      "candidate_ground_penetration_mm": 135.95016393027527,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999999999998,
+      "frame": 61
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 54.545582054657096,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999998310115,
+      "frame": 62
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 0.0,
+      "frame": 63
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 0.0,
+      "frame": 64
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 0.0,
+      "frame": 65
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 0.0,
+      "frame": 66
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 8.72382236166079e-17,
+      "frame": 1445
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 0.009988786732623392,
+      "frame": 1446
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 0.10479489449670004,
+      "frame": 1447
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 0.014682218261466227,
+      "frame": 1448
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 0.12794551182408254,
+      "frame": 1449
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 21.525406513426514,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 5.352976303600657,
+      "frame": 1450
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 4.665408641522884,
+      "frame": 1451
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.002687612895863198,
+      "root_correction_mm": 7.017869133230874,
+      "frame": 1452
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.45259298338954396,
+      "root_correction_mm": 0.1986164601838462,
+      "frame": 1453
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0052050227204167325,
+      "root_correction_mm": 7.559286250928605,
+      "frame": 1454
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.20458801540020743,
+      "root_correction_mm": 10.06586484491135,
+      "frame": 1455
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.001304112931114764,
+      "root_correction_mm": 6.381685469895641,
+      "frame": 1698
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.002617361997213032,
+      "root_correction_mm": 3.505802246875452,
+      "frame": 1699
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0036753953923350973,
+      "root_correction_mm": 5.069514592565946,
+      "frame": 1700
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 0.0,
+      "frame": 1701
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 0.0,
+      "frame": 1702
+    },
+    {
+      "source_mesh_penetration_mm": 235.6028279960782,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 0.0,
+      "frame": 1703
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 0.0,
+      "frame": 1704
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 0.0,
+      "frame": 1705
+    },
+    {
+      "source_mesh_penetration_mm": 0.14678960768889546,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 0.0,
+      "frame": 1706
+    },
+    {
+      "source_mesh_penetration_mm": 0.07795777407404196,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 0.0,
+      "frame": 1707
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 0.0,
+      "frame": 1708
+    },
+    {
+      "source_mesh_penetration_mm": 1.8048113471032061,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 3.905580836213079,
+      "candidate_ground_penetration_mm": 21.990038350317306,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999999999991,
+      "frame": 1895
+    },
+    {
+      "source_mesh_penetration_mm": 1.864936237813363,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 4.2367632733844305,
+      "candidate_ground_penetration_mm": 5.2031862415410846,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999999986339,
+      "frame": 1896
+    },
+    {
+      "source_mesh_penetration_mm": 1.5727204768547685,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 4.220665923201886,
+      "candidate_ground_penetration_mm": 2.8173648356079606,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999999999915,
+      "frame": 1897
+    },
+    {
+      "source_mesh_penetration_mm": 1.041496168999684,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 3.8516403861058426,
+      "candidate_ground_penetration_mm": 11.998174330351413,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.827259509132447,
+      "frame": 1898
+    },
+    {
+      "source_mesh_penetration_mm": 0.315815105485679,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 3.4025587614635837,
+      "candidate_ground_penetration_mm": 10.936487817696142,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999999999978,
+      "frame": 1899
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 23.27170950503088,
+      "candidate_mesh_penetration_mm": 2.680968772740515,
+      "candidate_ground_penetration_mm": 12.877485717826653,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.9999999999997,
+      "frame": 1900
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 26.894758504761356,
+      "candidate_mesh_penetration_mm": 0.3158202999632844,
+      "candidate_ground_penetration_mm": 42.71510637901479,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999999999998,
+      "frame": 1901
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 20.1097892557294,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 66.8355419929317,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999961011024704,
+      "frame": 1902
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 6.409172758893522,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 84.94569230266269,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999999997939,
+      "frame": 1903
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 96.07605931086358,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999999999998,
+      "frame": 1904
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 0.0,
+      "frame": 1905
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 0.0,
+      "frame": 1906
+    },
+    {
+      "source_mesh_penetration_mm": 3.628332451672455,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 0.0,
+      "frame": 1907
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 1.0266899172527316e-20,
+      "frame": 2044
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 0.0,
+      "frame": 2045
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 3.368210458626892e-52,
+      "frame": 2046
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 9.294389906768771,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 0.9899289545799391,
+      "frame": 2047
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 18.532222133401206,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 3.2431828473191806,
+      "frame": 2048
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 25.180495165330026,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 5.796589538740346,
+      "frame": 2049
+    },
+    {
+      "source_mesh_penetration_mm": 1.9394108004362922,
+      "source_ground_penetration_mm": 24.356578921770648,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 12.83121333606223,
+      "frame": 2050
+    },
+    {
+      "source_mesh_penetration_mm": 1.7004845162570286,
+      "source_ground_penetration_mm": 14.47584264459388,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 16.433098702388417,
+      "frame": 2051
+    },
+    {
+      "source_mesh_penetration_mm": 1.0908350323586464,
+      "source_ground_penetration_mm": 2.4041193930470217,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 21.39004491281112,
+      "frame": 2052
+    },
+    {
+      "source_mesh_penetration_mm": 35.58197071821218,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 24.79566080532176,
+      "frame": 2053
+    },
+    {
+      "source_mesh_penetration_mm": 61.54982197506868,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 28.891099218428675,
+      "frame": 2054
+    },
+    {
+      "source_mesh_penetration_mm": 78.34729272503965,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 32.3397514975001,
+      "frame": 2055
+    },
+    {
+      "source_mesh_penetration_mm": 76.82469057880331,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 35.27596102645869,
+      "frame": 2056
+    },
+    {
+      "source_mesh_penetration_mm": 72.18023847831427,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 38.62446100564695,
+      "frame": 2057
+    },
+    {
+      "source_mesh_penetration_mm": 64.90444408436949,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 41.96049410348326,
+      "frame": 2058
+    },
+    {
+      "source_mesh_penetration_mm": 53.97199890427015,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 45.13615828763957,
+      "frame": 2059
+    },
+    {
+      "source_mesh_penetration_mm": 38.3615794852921,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 48.607133840662925,
+      "frame": 2060
+    },
+    {
+      "source_mesh_penetration_mm": 20.76474039686599,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 51.91093760323838,
+      "frame": 2061
+    },
+    {
+      "source_mesh_penetration_mm": 5.971237990535762,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 56.88806745552297,
+      "frame": 2062
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 64.87414410095215,
+      "frame": 2063
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 222.83811451544778,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999999999998,
+      "frame": 2064
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 225.3101134384939,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999668631978,
+      "frame": 2065
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.858515523232628,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 228.2650593617998,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999999999998,
+      "frame": 2066
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 168.26326139491798,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 105.2442930730823,
+      "root_correction_mm": 13.856406460551014,
+      "frame": 2076
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 161.63697846099743,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 77.88467040655509,
+      "root_correction_mm": 13.856406456952941,
+      "frame": 2077
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 4.265978765131913,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 155.47125500096246,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 53.6519121616166,
+      "root_correction_mm": 13.856406445509439,
+      "frame": 2078
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 10.617181769453317,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 148.4399484858313,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 31.9615206957071,
+      "root_correction_mm": 13.856402906506805,
+      "frame": 2079
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 16.438928330244615,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 140.81447892448273,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 10.993332734248858,
+      "root_correction_mm": 13.856395646315796,
+      "frame": 2080
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 21.189741174497485,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 131.89098684769118,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.07700208469368539,
+      "root_correction_mm": 11.608096464908394,
+      "frame": 2081
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 11.739773517414175,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 122.55128382246745,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999999999998,
+      "frame": 2082
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 1.2244516069400968,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 112.24981602109068,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999999987534,
+      "frame": 2083
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 100.49975815840732,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999999999998,
+      "frame": 2084
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 88.44152754711541,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999999999998,
+      "frame": 2085
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 74.01606929617839,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999999999998,
+      "frame": 2086
+    },
+    {
+      "source_mesh_penetration_mm": 5.355254468179577,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 4.27445680106909,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 1.8003542354219175,
+      "root_correction_mm": 11.17466495681884,
+      "frame": 2265
+    },
+    {
+      "source_mesh_penetration_mm": 8.436334850116019,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 2.4975537971422472,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.8986899627265571,
+      "root_correction_mm": 10.293805194651977,
+      "frame": 2266
+    },
+    {
+      "source_mesh_penetration_mm": 2.67597695144208,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.026041465647775656,
+      "root_correction_mm": 17.74701916284002,
+      "frame": 2267
+    },
+    {
+      "source_mesh_penetration_mm": 9.184273311136282,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 11.812365720178914,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 13.731129417233195,
+      "root_correction_mm": 17.738999541049207,
+      "frame": 2268
+    },
+    {
+      "source_mesh_penetration_mm": 7.99505214176719,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.005760912792366773,
+      "root_correction_mm": 11.354170769468647,
+      "frame": 2269
+    },
+    {
+      "source_mesh_penetration_mm": 7.026763361795541,
+      "source_ground_penetration_mm": 48.98847048250308,
+      "candidate_mesh_penetration_mm": 8.195806351903814,
+      "candidate_ground_penetration_mm": 7.420231931101806,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 19.21462453244853,
+      "root_correction_mm": 23.64734108870507,
+      "frame": 2270
+    },
+    {
+      "source_mesh_penetration_mm": 5.418383984705838,
+      "source_ground_penetration_mm": 59.52280991162772,
+      "candidate_mesh_penetration_mm": 5.992114665106902,
+      "candidate_ground_penetration_mm": 5.392161440036763,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 57.42622158927312,
+      "root_correction_mm": 37.06041678153422,
+      "frame": 2271
+    },
+    {
+      "source_mesh_penetration_mm": 7.338657891104664,
+      "source_ground_penetration_mm": 61.81057657411134,
+      "candidate_mesh_penetration_mm": 4.754986137172283,
+      "candidate_ground_penetration_mm": 124.23764527276631,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.001963337448805496,
+      "root_correction_mm": 8.445886154778458,
+      "frame": 2272
+    },
+    {
+      "source_mesh_penetration_mm": 9.737742895980151,
+      "source_ground_penetration_mm": 57.8378532883415,
+      "candidate_mesh_penetration_mm": 5.131585937033826,
+      "candidate_ground_penetration_mm": 128.48202355110345,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.9999999999999964,
+      "frame": 2273
+    },
+    {
+      "source_mesh_penetration_mm": 12.29022445026579,
+      "source_ground_penetration_mm": 49.331242521331696,
+      "candidate_mesh_penetration_mm": 7.7538420787967315,
+      "candidate_ground_penetration_mm": 127.2622641396696,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999999999998,
+      "frame": 2274
+    },
+    {
+      "source_mesh_penetration_mm": 14.990666674420675,
+      "source_ground_penetration_mm": 38.51497872544733,
+      "candidate_mesh_penetration_mm": 10.582321147688722,
+      "candidate_ground_penetration_mm": 122.86196421119344,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.9999999999999964,
+      "frame": 2275
+    },
+    {
+      "source_mesh_penetration_mm": 17.43462722263028,
+      "source_ground_penetration_mm": 24.984688988925292,
+      "candidate_mesh_penetration_mm": 13.175345775577554,
+      "candidate_ground_penetration_mm": 115.11234720058849,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.992792798021821,
+      "frame": 2276
+    },
+    {
+      "source_mesh_penetration_mm": 19.455688172594435,
+      "source_ground_penetration_mm": 9.217943851766337,
+      "candidate_mesh_penetration_mm": 15.337693493443595,
+      "candidate_ground_penetration_mm": 103.72151546564469,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999999999998,
+      "frame": 2277
+    },
+    {
+      "source_mesh_penetration_mm": 19.707561342148026,
+      "source_ground_penetration_mm": 0.09605687439617067,
+      "candidate_mesh_penetration_mm": 17.43462313207493,
+      "candidate_ground_penetration_mm": 88.20404166609589,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999999999998,
+      "frame": 2278
+    },
+    {
+      "source_mesh_penetration_mm": 18.407345078365687,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 17.778174386256484,
+      "candidate_ground_penetration_mm": 73.70718547275307,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999865825018,
+      "frame": 2279
+    },
+    {
+      "source_mesh_penetration_mm": 16.356123125130622,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 16.581048594166795,
+      "candidate_ground_penetration_mm": 64.11985610651524,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999999736036,
+      "frame": 2280
+    },
+    {
+      "source_mesh_penetration_mm": 13.989919143636147,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 14.67036690531013,
+      "candidate_ground_penetration_mm": 54.25516662993604,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999999999998,
+      "frame": 2281
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 1.7108630911121803,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.1750116410409515,
+      "frame": 2400
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.22440298337526865,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 6.795089556236373,
+      "frame": 2401
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.6887288642185713,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.689324387037195,
+      "frame": 2402
+    },
+    {
+      "source_mesh_penetration_mm": 0.07603815584721194,
+      "source_ground_penetration_mm": 4.627677444906497,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.310804432420107,
+      "frame": 2403
+    },
+    {
+      "source_mesh_penetration_mm": 0.21039013429781211,
+      "source_ground_penetration_mm": 0.46222617025457047,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 9.913001362014084,
+      "frame": 2404
+    },
+    {
+      "source_mesh_penetration_mm": 41.23263266463757,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 3.861058069034094,
+      "frame": 2405
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 3.328498335374219,
+      "frame": 2406
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 0.0,
+      "frame": 2407
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 0.0,
+      "frame": 2408
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 0.0,
+      "frame": 2409
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 0.0,
+      "frame": 2410
+    },
+    {
+      "source_mesh_penetration_mm": 1.2312682208574588,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 28.585474198032895,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999999160553,
+      "frame": 2424
+    },
+    {
+      "source_mesh_penetration_mm": 0.7273444659122942,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 48.240078414671096,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999999998621,
+      "frame": 2425
+    },
+    {
+      "source_mesh_penetration_mm": 0.17457315809988966,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 62.916058284761405,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999999999998,
+      "frame": 2426
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 69.53671338882108,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999963990071,
+      "frame": 2427
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 73.34021074964689,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999999999998,
+      "frame": 2428
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 29.293398542731037,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 98.83767865526644,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999999999998,
+      "frame": 2429
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 60.1797698399098,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 104.66071879130101,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999999999998,
+      "frame": 2430
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 85.35101485815814,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 99.47146588756227,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999999322533,
+      "frame": 2431
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 105.48247939530086,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 91.65869321299637,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.998234505070816,
+      "frame": 2432
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 114.88120497676498,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 42.45226652401847,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 15.998234505070815,
+      "frame": 2433
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 83.28813383783972,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 23.92863059665293,
+      "frame": 2434
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 64.67486786038828,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 28.16353514419205,
+      "frame": 2435
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 48.033518586190866,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 0.0,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 28.860209717270372,
+      "frame": 2436
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 115.52137416037655,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 6.533795179978665,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 155.40292124555532,
+      "root_correction_mm": 38.55742535832031,
+      "frame": 2437
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 98.68739631027834,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 195.2749336678381,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 143.98236809956626,
+      "root_correction_mm": 11.313747724597144,
+      "frame": 2438
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 81.05738812155194,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 193.4874157811261,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 164.80548704102472,
+      "root_correction_mm": 13.856406459288698,
+      "frame": 2439
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 62.099813407366305,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 192.31024838518718,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 177.48730669706427,
+      "root_correction_mm": 13.85640645848904,
+      "frame": 2440
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 43.87738268249882,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 192.08016874536938,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 189.37313592019925,
+      "root_correction_mm": 13.856406460551014,
+      "frame": 2441
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 24.621199717853468,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 191.9199011892315,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 199.56100282136842,
+      "root_correction_mm": 13.856406460551014,
+      "frame": 2442
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 4.891921242111005,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 192.14940904273573,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 208.1519828973645,
+      "root_correction_mm": 13.856406460551014,
+      "frame": 2443
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 192.6106094766335,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.99999999999812,
+      "frame": 2444
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 193.07683179923893,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999999999998,
+      "frame": 2445
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 194.3384889367654,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999999999998,
+      "frame": 2446
+    },
+    {
+      "source_mesh_penetration_mm": 0.0,
+      "source_ground_penetration_mm": 0.0,
+      "candidate_mesh_penetration_mm": 0.0,
+      "candidate_ground_penetration_mm": 195.97332473702184,
+      "source_support_error_mm": 0.0,
+      "candidate_support_error_mm": 0.0,
+      "root_correction_mm": 7.999999999999691,
+      "frame": 2447
+    }
+  ],
+  "replay_allowed_only_after_full_checker": true
+}

@@ -1,0 +1,63 @@
+{
+  "source": "/home/srl/lense110/motion correct/walk0821/lens110_standard_to_left_support_single_leg_5s_and_back.pkl",
+  "output": "/home/srl/lense110/motion correct/walk0821/lens110_standard_to_left_support_single_leg_5s_left_foot_locked.pkl",
+  "xml": "/home/srl/lense110/walk/colleague_sim2sim_work/humanoid_sim2sim/resource/lens_110/mjcf/lens110_21dof_sim_flatfoot.xml",
+  "frames": 500,
+  "fps": 50.0,
+  "floor_geom": "floor",
+  "ground_geom_count": 47,
+  "contact_threshold_mm": 8.0,
+  "floor_margin_mm": 1.0,
+  "support_body": "left_ankle_roll_link",
+  "min_contact_frames": 6,
+  "max_contacts_per_frame": 1,
+  "max_support_bodies_per_frame": 1,
+  "native_ccd": false,
+  "native_ccd_message": "native CCD 不可用，使用默认 CCD",
+  "optimized_frames": 352,
+  "sustained_contact_geoms": 2,
+  "sustained_contact_windows": 3,
+  "max_contact_xy_error_mm": 1.8502211035623615,
+  "min_optimized_signed_distance_mm": 0.9949956154380775,
+  "max_root_correction_mm": 5.9108987058589815,
+  "max_root_step_m": 0.001029407716884674,
+  "max_joint_step_rad": 0.038400888442993164,
+  "contact_paths_after": {
+    "14": [
+      {
+        "start": 74,
+        "end_exclusive": 426,
+        "geom_id": 14,
+        "geom": "left_ankle_roll_collision",
+        "body": "left_ankle_roll_link",
+        "max_xy_drift_mm": 1.8502211035623615,
+        "path_length_mm": 1.998143710597357,
+        "minimum_signed_distance_mm": 0.9949956154380775
+      }
+    ],
+    "28": [
+      {
+        "start": 60,
+        "end_exclusive": 78,
+        "geom_id": 28,
+        "geom": "right_ankle_roll_collision",
+        "body": "right_ankle_roll_link",
+        "max_xy_drift_mm": 81.73250048937594,
+        "path_length_mm": 81.75752609588481,
+        "minimum_signed_distance_mm": 3.6769221443695015
+      },
+      {
+        "start": 422,
+        "end_exclusive": 440,
+        "geom_id": 28,
+        "geom": "right_ankle_roll_collision",
+        "body": "right_ankle_roll_link",
+        "max_xy_drift_mm": 81.04167864382035,
+        "path_length_mm": 81.10345093441886,
+        "minimum_signed_distance_mm": 3.676923033727644
+      }
+    ]
+  },
+  "root_trajectory_changed": true,
+  "exact_mesh_ground_method": "mj_geomDistance signed mesh/primitive-to-plane distance plus contact-point IK lock"
+}

@@ -1,0 +1,154 @@
+{
+  "source": "/home/srl/lense110/motion correct/walk0821/lens110_fall4_extreme_windows_repaired.pkl",
+  "output": "/home/srl/lense110/motion correct/walk0821/lens110_fall4_ground_hard_floor_repaired.pkl",
+  "xml": "/home/srl/lense110/walk/colleague_sim2sim_work/humanoid_sim2sim/resource/lens_110/mjcf/lens110_21dof_sim_flatfoot.xml",
+  "frames": 2575,
+  "fps": 50.0,
+  "method": "exact mesh-ground hard floor clearance using smooth root-z lift only",
+  "floor_geom": "floor",
+  "floor_margin_mm": 1.0,
+  "max_root_z_step_mm": 20.000000000000004,
+  "max_root_lift_mm": 134.31214201946014,
+  "frames_lifted": 417,
+  "minimum_source_mesh_ground_mm": -133.31214201946014,
+  "minimum_after_mesh_ground_mm": 0.999999999999994,
+  "worst_source_frames": [
+    {
+      "frame": 58,
+      "geom": "<unnamed:12>",
+      "source_distance_mm": -133.31214201946014,
+      "lift_mm": 134.31214201946014
+    },
+    {
+      "frame": 59,
+      "geom": "<unnamed:12>",
+      "source_distance_mm": -117.37553136468013,
+      "lift_mm": 118.37553136468013
+    },
+    {
+      "frame": 2437,
+      "geom": "<unnamed:26>",
+      "source_distance_mm": -115.52137416037655,
+      "lift_mm": 116.52137416037655
+    },
+    {
+      "frame": 2438,
+      "geom": "<unnamed:26>",
+      "source_distance_mm": -98.68739631027834,
+      "lift_mm": 99.68739631027834
+    },
+    {
+      "frame": 2432,
+      "geom": "<unnamed:12>",
+      "source_distance_mm": -91.6587069317783,
+      "lift_mm": 92.6587069317783
+    },
+    {
+      "frame": 2431,
+      "geom": "<unnamed:26>",
+      "source_distance_mm": -85.35101485815814,
+      "lift_mm": 86.35101485815815
+    },
+    {
+      "frame": 2439,
+      "geom": "<unnamed:26>",
+      "source_distance_mm": -81.05738812155194,
+      "lift_mm": 82.05738812155194
+    },
+    {
+      "frame": 60,
+      "geom": "<unnamed:12>",
+      "source_distance_mm": -68.75178544715855,
+      "lift_mm": 98.37553136468013
+    },
+    {
+      "frame": 57,
+      "geom": "<unnamed:12>",
+      "source_distance_mm": -65.29680218470472,
+      "lift_mm": 114.31214201946015
+    },
+    {
+      "frame": 2440,
+      "geom": "<unnamed:26>",
+      "source_distance_mm": -62.099813407366305,
+      "lift_mm": 63.0998134073663
+    },
+    {
+      "frame": 2272,
+      "geom": "<unnamed:12>",
+      "source_distance_mm": -61.81057657411134,
+      "lift_mm": 62.81057657411134
+    },
+    {
+      "frame": 2430,
+      "geom": "<unnamed:26>",
+      "source_distance_mm": -60.1797698399098,
+      "lift_mm": 66.35101485815814
+    },
+    {
+      "frame": 2271,
+      "geom": "<unnamed:12>",
+      "source_distance_mm": -59.52280991162772,
+      "lift_mm": 60.522809911627725
+    },
+    {
+      "frame": 2273,
+      "geom": "<unnamed:12>",
+      "source_distance_mm": -57.8378532883415,
+      "lift_mm": 58.8378532883415
+    },
+    {
+      "frame": 2274,
+      "geom": "<unnamed:12>",
+      "source_distance_mm": -49.331242521331696,
+      "lift_mm": 50.331242521331696
+    },
+    {
+      "frame": 2441,
+      "geom": "<unnamed:26>",
+      "source_distance_mm": -43.87738268249882,
+      "lift_mm": 44.87738268249882
+    },
+    {
+      "frame": 2433,
+      "geom": "<unnamed:12>",
+      "source_distance_mm": -42.45226352216497,
+      "lift_mm": 72.6587069317783
+    },
+    {
+      "frame": 2275,
+      "geom": "<unnamed:12>",
+      "source_distance_mm": -38.514978725447335,
+      "lift_mm": 39.514978725447335
+    },
+    {
+      "frame": 2429,
+      "geom": "<unnamed:26>",
+      "source_distance_mm": -29.29339854273104,
+      "lift_mm": 46.35101485815814
+    },
+    {
+      "frame": 1901,
+      "geom": "<unnamed:26>",
+      "source_distance_mm": -26.894758504761356,
+      "lift_mm": 27.894758504761356
+    }
+  ],
+  "after_full_scan": {
+    "checked_frames": 2575,
+    "stride": 1,
+    "mesh_mesh_collision_count": 105486,
+    "mesh_ground_collision_count": 0,
+    "max_mesh_mesh_penetration_mm": 76.1501708727229,
+    "max_mesh_ground_penetration_mm": 0.0,
+    "worst_mesh_mesh": {
+      "frame": 558,
+      "geom1": "<unnamed:32>",
+      "geom2": "<unnamed:34>",
+      "penetration_mm": 76.1501708727229
+    },
+    "worst_mesh_ground": null
+  },
+  "mesh_mesh_unchanged_by_construction": true,
+  "replay_allowed_only_after_full_checker": true
+}
