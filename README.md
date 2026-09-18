@@ -3,14 +3,6 @@
 
 # 跌倒起身训练架构（AMP + 专家指导 + 倒放式课程）
 
-## 训练权重如何理解 / Interpreting training weights
-
-本文按本仓库当前代码说明训练机制；已有策略的复现参数以对应 run 的 `params/env.yaml`、`params/agent.yaml` 和部署配置为准。奖励混合系数、逐项环境奖励权重、优化器 loss 系数、专家样本比例以及课程采样范围是不同概念。
-
-混合系数可以写成 85%/15% 这样的配置比例，但不能代表训练过程中实际累计奖励贡献；单项 reward 的数值范围、门控、控制步长和出现频率都不同。需要实际贡献占比时，应统计同一 run 中每项加权回报，而不是把配置权重归一化成百分比。
-
-Configuration mixing coefficients are not measured reward contributions. Environment weights, optimizer coefficients, expert sampling and curriculum schedules describe different parts of training. Reproduce a saved policy with its own run snapshots.
-
 ## AMP、专家指导与倒放式课程的实际训练流程
 
 框架为 **AMP + 专家动作指导 + 倒放式课程，使用 PPO 优化控制策略**。专家指导通过专家动作状态转移训练判别器，并通过专家姿态初始化环境；当前 GetUp 注册使用 `AMPPPO`，没有启用独立的 teacher-action 行为克隆或蒸馏 loss。
@@ -234,6 +226,14 @@ clip_actions = None
 脚底平整奖励的三重门为：骨盆接近站高 `gate_std=0.025`、根部水平速度低于 `0.25 m/s`、左右脚都接触地面；任一门关闭时该项为零，避免恢复过程中的踝部翻转被过早锁死。训练中的 `foot_slip` 默认项因零速度 command 会失效，本配置改用与 command 无关的 `foot_slip_stand`。
 
 终止条件包括 time out、姿态超过 `70°`、骨盆低于 `0.44 m`；恢复延迟窗口会暂缓失败重置。当前出生高度窗口固定为 `[0.16,0.63] m`，候选不足时回退全帧池。
+
+## 训练权重如何理解 / Interpreting training weights
+
+本文按本仓库当前代码说明训练机制；已有策略的复现参数以对应 run 的 `params/env.yaml`、`params/agent.yaml` 和部署配置为准。奖励混合系数、逐项环境奖励权重、优化器 loss 系数、专家样本比例以及课程采样范围是不同概念。
+
+混合系数可以写成 85%/15% 这样的配置比例，但不能代表训练过程中实际累计奖励贡献；单项 reward 的数值范围、门控、控制步长和出现频率都不同。需要实际贡献占比时，应统计同一 run 中每项加权回报，而不是把配置权重归一化成百分比。
+
+Configuration mixing coefficients are not measured reward contributions. Environment weights, optimizer coefficients, expert sampling and curriculum schedules describe different parts of training. Reproduce a saved policy with its own run snapshots.
 
 ## 8. 训练、导出和目录
 
